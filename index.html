@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0e1530" />
+  <title>Citadel · A daily city game</title>
+  <meta name="description" content="Guess the daily city. Every guess gets you closer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Leaflet for the map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏰%3C/text%3E%3C/svg%3E">
+
+  <!-- City data (assigns window.CITY_DATA). Loading via <script> means it works under file:// too. -->
+  <script src="cities-data.js" defer></script>
+</head>
+
+<body>
+  <!-- Background star field -->
+  <div class="stars" aria-hidden="true">
+    <div class="stars-layer stars-1"></div>
+    <div class="stars-layer stars-2"></div>
+    <div class="stars-layer stars-3"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <defs>
+            <linearGradient id="grad-mark" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#ffd166"/>
+              <stop offset="100%" stop-color="#ef476f"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 30 L6 18 L10 18 L10 14 L14 14 L14 18 L18 18 L18 12 L22 12 L22 18 L26 18 L26 14 L30 14 L30 18 L34 18 L34 30 Z"
+                fill="url(#grad-mark)" stroke="#fff8e7" stroke-width="1" stroke-linejoin="round"/>
+          <rect x="6" y="30" width="28" height="3" fill="#fff8e7"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>Citadel</h1>
+        <p class="tagline">Find today's hidden city, one guess at a time.</p>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="icon-btn" id="how-btn" aria-label="How to play" title="How to play">
+        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn" id="stats-btn" aria-label="Stats" title="Stats">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 20V12M10 20V4M16 20V14M22 20V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Game card -->
+    <section class="game-card" aria-label="Today's puzzle">
+      <div class="puzzle-meta">
+        <span class="puzzle-num" id="puzzle-num">Puzzle #—</span>
+        <span class="dot">·</span>
+        <span class="puzzle-date" id="puzzle-date">—</span>
+        <span class="puzzle-mode-badge" id="puzzle-mode-badge" hidden>FREE PLAY</span>
+      </div>
+
+      <div class="guess-row">
+        <div class="guess-input-wrap">
+          <input type="text" id="guess-input" autocomplete="off" autocapitalize="words"
+                 spellcheck="false" placeholder="Enter any major city…" aria-label="Your guess" />
+          <div class="guess-suggestions" id="guess-suggestions" role="listbox" hidden></div>
+        </div>
+        <button class="btn-primary" id="guess-btn">
+          <span>Guess</span>
+          <svg viewBox="0 0 20 20" width="16" height="16"><path d="M5 10h10M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="status-row" id="status-row">
+        <span class="status-counter">
+          <span class="status-num" id="guess-count">0</span>
+          <span class="status-lbl">guesses</span>
+        </span>
+        <span class="closest-pill" id="closest-pill" hidden>
+          <span class="closest-pill-warmth" id="closest-pill-warmth"></span>
+          <span class="closest-pill-text">
+            <span class="closest-pill-lbl" id="closest-pill-lbl">Closest so far</span>
+            <span class="closest-pill-name" id="closest-pill-name">—</span>
+          </span>
+        </span>
+      </div>
+
+      <!-- Proximity meter: fills toward the answer as you get closer -->
+      <div class="proximity" id="proximity" hidden>
+        <div class="proximity-track">
+          <div class="proximity-fill" id="proximity-fill"></div>
+          <div class="proximity-marker" id="proximity-marker"></div>
+        </div>
+        <div class="proximity-labels">
+          <span class="prox-lbl-cold">Cold</span>
+          <span class="prox-pct" id="prox-pct">—</span>
+          <span class="prox-lbl-hot">🎯</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map column: HUD bar on top, map below -->
+    <section class="map-column" aria-label="Map and direction HUD">
+
+      <!-- HUD: compass on left, warmth banner with distance on right.
+           Sits ABOVE the map so it's never hidden by zoom/pan repaints. -->
+      <div class="hud-bar" id="hud-bar" hidden>
+        <div class="compass" id="compass">
+          <div class="compass-ring">
+            <span class="cardinal cardinal-n">N</span>
+            <span class="cardinal cardinal-e">E</span>
+            <span class="cardinal cardinal-s">S</span>
+            <span class="cardinal cardinal-w">W</span>
+            <div class="compass-arrow" id="compass-arrow">
+              <svg viewBox="0 0 60 60" width="60" height="60">
+                <path d="M30 6 L42 42 L30 36 L18 42 Z" fill="url(#grad-arrow)" stroke="#fff" stroke-width="1" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="grad-arrow" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#ffd166"/>
+                    <stop offset="100%" stop-color="#ef476f"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="compass-label" id="compass-label">—</div>
+        </div>
+
+        <div class="warmth-banner" id="warmth-banner">
+          <div class="warmth-banner-inner">
+            <span class="warmth-banner-emoji" id="warmth-banner-emoji">🟦</span>
+            <div class="warmth-banner-text">
+              <span class="warmth-banner-label" id="warmth-banner-label">Cool</span>
+              <span class="warmth-banner-distance" id="warmth-banner-distance">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="map-card" aria-label="Map">
+        <div id="map"></div>
+      </section>
+    </section>
+
+    <!-- Guess list -->
+    <section class="guess-list-card" aria-label="Your guesses">
+      <div class="guess-list-head">
+        <h2 class="card-title">Your guesses</h2>
+        <span class="guess-list-sort">closest first</span>
+      </div>
+      <ol class="guess-list" id="guess-list">
+        <li class="guess-empty">No guesses yet. The first one's free.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Win modal -->
+  <div class="modal" id="win-modal" hidden>
+    <div class="modal-scrim" data-close></div>
+    <div class="modal-card win-card" role="dialog" aria-modal="true" aria-labelledby="win-title">
+      <button class="icon-btn modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="win-burst" aria-hidden="true">
+        <svg viewBox="0 0 220 220" width="180" height="180">
+          <defs>
+            <radialGradient id="win-glow">
+              <stop offset="0%" stop-color="#ffd166" stop-opacity=".9"/>
+              <stop offset="60%" stop-color="#ef476f" stop-opacity=".4"/>
+              <stop offset="100%" stop-color="#ef476f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="110" cy="110" r="100" fill="url(#win-glow)" class="win-burst-glow"/>
+          <g class="win-burst-rays" stroke="#ffd166" stroke-width="2" stroke-linecap="round">
+            <line x1="110" y1="20"  x2="110" y2="40"/>
+            <line x1="110" y1="180" x2="110" y2="200"/>
+            <line x1="20"  y1="110" x2="40"  y2="110"/>
+            <line x1="180" y1="110" x2="200" y2="110"/>
+            <line x1="40"  y1="40"  x2="55"  y2="55"/>
+            <line x1="180" y1="180" x2="165" y2="165"/>
+            <line x1="180" y1="40"  x2="165" y2="55"/>
+            <line x1="40"  y1="180" x2="55"  y2="165"/>
+          </g>
+        </svg>
+        <div class="win-trophy">🏰</div>
+      </div>
+
+      <h2 id="win-title" class="win-title">Citadel taken!</h2>
+      <p class="win-subtitle">You found <strong id="win-city">—</strong>, capital of <span id="win-country">—</span>.</p>
+
+      <div class="win-stats">
+        <div class="win-stat">
+          <span class="win-stat-num" id="win-guess-count">—</span>
+          <span class="win-stat-lbl">guesses</span>
+        </div>
+        <div class="win-stat">
+          <span class="win-stat-num" id="win-streak">—</span>
+          <span class="win-stat-lbl">day streak</span>
+        </div>
+        <div class="win-stat">
+          <span class="win-stat-num" id="win-played">—</span>
+          <span class="win-stat-lbl">total wins</span>
+        </div>
+      </div>
+
+      <div class="share-grid" id="share-grid"></div>
+
+      <div class="win-actions">
+        <button class="btn-primary" id="share-btn">
+          <svg viewBox="0 0 20 20" width="16" height="16"><path d="M14 8a3 3 0 1 0-2.83-4H11M6 12a3 3 0 1 0 0-2H7M14 16a3 3 0 1 0-2.83-4M7 9.5l5-2M12 12.5l-5-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Share result
+        </button>
+        <button class="btn-ghost" id="play-again-btn" hidden>Play again</button>
+      </div>
+
+      <p class="win-footer" id="win-next-hint">Come back tomorrow for a new citadel.</p>
+    </div>
+  </div>
+
+  <!-- How-to-play modal -->
+  <div class="modal" id="how-modal" hidden>
+    <div class="modal-scrim" data-close></div>
+    <div class="modal-card how-card" role="dialog" aria-modal="true" aria-labelledby="how-title">
+      <button class="icon-btn modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <h2 id="how-title">How to play</h2>
+      <p>Each day, a city is hidden. Guess any well-known city in the world and we'll show you:</p>
+      <ul class="how-list">
+        <li><span class="how-ico">📍</span> A pin where your guess is on the map</li>
+        <li><span class="how-ico">🧭</span> A compass arrow pointing toward the answer</li>
+        <li><span class="how-ico">🌡️</span> A "warmth" gauge — the closer, the hotter</li>
+        <li><span class="how-ico">📏</span> The distance, in kilometers</li>
+      </ul>
+      <p>Keep guessing until you find it. Fewer guesses, brighter glory.</p>
+      <div class="how-warmth-row">
+        <span class="warmth-pip warmth-cold">Cold</span>
+        <span class="warmth-pip warmth-cool">Cool</span>
+        <span class="warmth-pip warmth-warm">Warm</span>
+        <span class="warmth-pip warmth-hot">Hot</span>
+        <span class="warmth-pip warmth-blazing">Scorching</span>
+      </div>
+      <button class="btn-primary how-start" data-close>Let's play</button>
+    </div>
+  </div>
+
+  <!-- Stats modal -->
+  <div class="modal" id="stats-modal" hidden>
+    <div class="modal-scrim" data-close></div>
+    <div class="modal-card stats-card" role="dialog" aria-modal="true" aria-labelledby="stats-title">
+      <button class="icon-btn modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <h2 id="stats-title">Your stats</h2>
+      <div class="stats-grid">
+        <div class="stats-cell">
+          <span class="stats-num" id="stats-played">0</span>
+          <span class="stats-lbl">played</span>
+        </div>
+        <div class="stats-cell">
+          <span class="stats-num" id="stats-wins">0</span>
+          <span class="stats-lbl">wins</span>
+        </div>
+        <div class="stats-cell">
+          <span class="stats-num" id="stats-streak">0</span>
+          <span class="stats-lbl">streak</span>
+        </div>
+        <div class="stats-cell">
+          <span class="stats-num" id="stats-best">—</span>
+          <span class="stats-lbl">best</span>
+        </div>
+        <div class="stats-cell">
+          <span class="stats-num" id="stats-avg">—</span>
+          <span class="stats-lbl">avg</span>
+        </div>
+      </div>
+      <button class="btn-ghost" id="reset-stats-btn">Reset everything…</button>
+    </div>
+  </div>
+
+  <!-- Reset confirmation modal -->
+  <div class="modal" id="reset-modal" hidden>
+    <div class="modal-scrim" data-close></div>
+    <div class="modal-card reset-card" role="dialog" aria-modal="true" aria-labelledby="reset-title">
+      <button class="icon-btn modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="reset-icon" aria-hidden="true">⚠️</div>
+      <h2 id="reset-title">Start fresh?</h2>
+      <p>This will clear:</p>
+      <ul class="reset-list">
+        <li>Your stats — played, wins, streak, best, average</li>
+        <li>Today's progress — your guesses on this puzzle</li>
+      </ul>
+      <p class="reset-note">You'll start over with the same daily puzzle. This can't be undone.</p>
+      <div class="reset-actions">
+        <button class="btn-ghost" data-close>Cancel</button>
+        <button class="btn-danger" id="reset-confirm-btn">Yes, reset everything</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

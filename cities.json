@@ -1,0 +1,5538 @@
+[
+{
+"city": "Algiers",
+"country": "Algeria",
+"continent": "Africa",
+"lat": 36.7538,
+"lon": 3.0588,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Luanda",
+"country": "Angola",
+"continent": "Africa",
+"lat": -8.839,
+"lon": 13.2894,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Porto-Novo",
+"country": "Benin",
+"continent": "Africa",
+"lat": 6.4969,
+"lon": 2.6289,
+"isCapital": true,
+"aliases": [
+"porto novo"
+]
+},
+{
+"city": "Gaborone",
+"country": "Botswana",
+"continent": "Africa",
+"lat": -24.6282,
+"lon": 25.9231,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ouagadougou",
+"country": "Burkina Faso",
+"continent": "Africa",
+"lat": 12.3714,
+"lon": -1.5197,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Gitega",
+"country": "Burundi",
+"continent": "Africa",
+"lat": -3.4271,
+"lon": 29.9246,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Yaoundé",
+"country": "Cameroon",
+"continent": "Africa",
+"lat": 3.848,
+"lon": 11.5021,
+"isCapital": true,
+"aliases": [
+"yaounde"
+]
+},
+{
+"city": "Praia",
+"country": "Cape Verde",
+"continent": "Africa",
+"lat": 14.933,
+"lon": -23.5133,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bangui",
+"country": "Central African Republic",
+"continent": "Africa",
+"lat": 4.3947,
+"lon": 18.5582,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "N'Djamena",
+"country": "Chad",
+"continent": "Africa",
+"lat": 12.1348,
+"lon": 15.0557,
+"isCapital": true,
+"aliases": [
+"n djamena",
+"ndjamena"
+]
+},
+{
+"city": "Moroni",
+"country": "Comoros",
+"continent": "Africa",
+"lat": -11.6455,
+"lon": 43.3333,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Brazzaville",
+"country": "Republic of the Congo",
+"continent": "Africa",
+"lat": -4.2634,
+"lon": 15.2429,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kinshasa",
+"country": "DR Congo",
+"continent": "Africa",
+"lat": -4.4419,
+"lon": 15.2663,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Djibouti",
+"country": "Djibouti",
+"continent": "Africa",
+"lat": 11.8251,
+"lon": 42.5903,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Cairo",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 30.0444,
+"lon": 31.2357,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Malabo",
+"country": "Equatorial Guinea",
+"continent": "Africa",
+"lat": 3.7523,
+"lon": 8.7741,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Asmara",
+"country": "Eritrea",
+"continent": "Africa",
+"lat": 15.3229,
+"lon": 38.9251,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Mbabane",
+"country": "Eswatini",
+"continent": "Africa",
+"lat": -26.3054,
+"lon": 31.1367,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Addis Ababa",
+"country": "Ethiopia",
+"continent": "Africa",
+"lat": 9.032,
+"lon": 38.7469,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Libreville",
+"country": "Gabon",
+"continent": "Africa",
+"lat": 0.4162,
+"lon": 9.4673,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Banjul",
+"country": "Gambia",
+"continent": "Africa",
+"lat": 13.4549,
+"lon": -16.579,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Accra",
+"country": "Ghana",
+"continent": "Africa",
+"lat": 5.6037,
+"lon": -0.187,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Conakry",
+"country": "Guinea",
+"continent": "Africa",
+"lat": 9.6412,
+"lon": -13.5784,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bissau",
+"country": "Guinea-Bissau",
+"continent": "Africa",
+"lat": 11.8636,
+"lon": -15.5977,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Yamoussoukro",
+"country": "Ivory Coast",
+"continent": "Africa",
+"lat": 6.8276,
+"lon": -5.2893,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Nairobi",
+"country": "Kenya",
+"continent": "Africa",
+"lat": -1.2921,
+"lon": 36.8219,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Maseru",
+"country": "Lesotho",
+"continent": "Africa",
+"lat": -29.3151,
+"lon": 27.4869,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Monrovia",
+"country": "Liberia",
+"continent": "Africa",
+"lat": 6.2907,
+"lon": -10.7605,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Tripoli",
+"country": "Libya",
+"continent": "Africa",
+"lat": 32.8872,
+"lon": 13.1913,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Antananarivo",
+"country": "Madagascar",
+"continent": "Africa",
+"lat": -18.8792,
+"lon": 47.5079,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Lilongwe",
+"country": "Malawi",
+"continent": "Africa",
+"lat": -13.9626,
+"lon": 33.7741,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bamako",
+"country": "Mali",
+"continent": "Africa",
+"lat": 12.6392,
+"lon": -8.0029,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Nouakchott",
+"country": "Mauritania",
+"continent": "Africa",
+"lat": 18.0735,
+"lon": -15.9582,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Port Louis",
+"country": "Mauritius",
+"continent": "Africa",
+"lat": -20.1609,
+"lon": 57.5012,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Rabat",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 34.0209,
+"lon": -6.8416,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Maputo",
+"country": "Mozambique",
+"continent": "Africa",
+"lat": -25.9692,
+"lon": 32.5732,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Windhoek",
+"country": "Namibia",
+"continent": "Africa",
+"lat": -22.5594,
+"lon": 17.0832,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Niamey",
+"country": "Niger",
+"continent": "Africa",
+"lat": 13.5117,
+"lon": 2.1251,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Abuja",
+"country": "Nigeria",
+"continent": "Africa",
+"lat": 9.0765,
+"lon": 7.3986,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kigali",
+"country": "Rwanda",
+"continent": "Africa",
+"lat": -1.9706,
+"lon": 30.1044,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "São Tomé",
+"country": "São Tomé and Príncipe",
+"continent": "Africa",
+"lat": 0.3365,
+"lon": 6.7273,
+"isCapital": true,
+"aliases": [
+"sao tome"
+]
+},
+{
+"city": "Dakar",
+"country": "Senegal",
+"continent": "Africa",
+"lat": 14.7167,
+"lon": -17.4677,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Victoria",
+"country": "Seychelles",
+"continent": "Africa",
+"lat": -4.6191,
+"lon": 55.4513,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Freetown",
+"country": "Sierra Leone",
+"continent": "Africa",
+"lat": 8.4657,
+"lon": -13.2317,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Mogadishu",
+"country": "Somalia",
+"continent": "Africa",
+"lat": 2.0469,
+"lon": 45.3182,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Pretoria",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -25.7479,
+"lon": 28.2293,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Juba",
+"country": "South Sudan",
+"continent": "Africa",
+"lat": 4.8594,
+"lon": 31.5713,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Khartoum",
+"country": "Sudan",
+"continent": "Africa",
+"lat": 15.5007,
+"lon": 32.5599,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Dodoma",
+"country": "Tanzania",
+"continent": "Africa",
+"lat": -6.173,
+"lon": 35.7419,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Lomé",
+"country": "Togo",
+"continent": "Africa",
+"lat": 6.1725,
+"lon": 1.2314,
+"isCapital": true,
+"aliases": [
+"lome"
+]
+},
+{
+"city": "Tunis",
+"country": "Tunisia",
+"continent": "Africa",
+"lat": 36.8065,
+"lon": 10.1815,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kampala",
+"country": "Uganda",
+"continent": "Africa",
+"lat": 0.3476,
+"lon": 32.5825,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Lusaka",
+"country": "Zambia",
+"continent": "Africa",
+"lat": -15.3875,
+"lon": 28.3228,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Harare",
+"country": "Zimbabwe",
+"continent": "Africa",
+"lat": -17.8252,
+"lon": 31.0335,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kabul",
+"country": "Afghanistan",
+"continent": "Asia",
+"lat": 34.5553,
+"lon": 69.2075,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Yerevan",
+"country": "Armenia",
+"continent": "Asia",
+"lat": 40.1792,
+"lon": 44.4991,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Baku",
+"country": "Azerbaijan",
+"continent": "Asia",
+"lat": 40.4093,
+"lon": 49.8671,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Manama",
+"country": "Bahrain",
+"continent": "Asia",
+"lat": 26.2285,
+"lon": 50.586,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Dhaka",
+"country": "Bangladesh",
+"continent": "Asia",
+"lat": 23.8103,
+"lon": 90.4125,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Thimphu",
+"country": "Bhutan",
+"continent": "Asia",
+"lat": 27.4728,
+"lon": 89.639,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bandar Seri Begawan",
+"country": "Brunei",
+"continent": "Asia",
+"lat": 4.9031,
+"lon": 114.9398,
+"isCapital": true,
+"aliases": [
+"bandar"
+]
+},
+{
+"city": "Phnom Penh",
+"country": "Cambodia",
+"continent": "Asia",
+"lat": 11.5564,
+"lon": 104.9282,
+"isCapital": true,
+"aliases": [
+"phnompenh"
+]
+},
+{
+"city": "Beijing",
+"country": "China",
+"continent": "Asia",
+"lat": 39.9042,
+"lon": 116.4074,
+"isCapital": true,
+"aliases": [
+"peking"
+]
+},
+{
+"city": "Tbilisi",
+"country": "Georgia",
+"continent": "Asia",
+"lat": 41.7151,
+"lon": 44.8271,
+"isCapital": true,
+"aliases": [
+"tiflis"
+]
+},
+{
+"city": "New Delhi",
+"country": "India",
+"continent": "Asia",
+"lat": 28.6139,
+"lon": 77.209,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Jakarta",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -6.2088,
+"lon": 106.8456,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Tehran",
+"country": "Iran",
+"continent": "Asia",
+"lat": 35.6892,
+"lon": 51.389,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Baghdad",
+"country": "Iraq",
+"continent": "Asia",
+"lat": 33.3152,
+"lon": 44.3661,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Jerusalem",
+"country": "Israel",
+"continent": "Asia",
+"lat": 31.7683,
+"lon": 35.2137,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Tokyo",
+"country": "Japan",
+"continent": "Asia",
+"lat": 35.6762,
+"lon": 139.6503,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Amman",
+"country": "Jordan",
+"continent": "Asia",
+"lat": 31.9454,
+"lon": 35.9284,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Astana",
+"country": "Kazakhstan",
+"continent": "Asia",
+"lat": 51.1605,
+"lon": 71.4704,
+"isCapital": true,
+"aliases": [
+"nur sultan",
+"nur-sultan"
+]
+},
+{
+"city": "Kuwait City",
+"country": "Kuwait",
+"continent": "Asia",
+"lat": 29.3759,
+"lon": 47.9774,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bishkek",
+"country": "Kyrgyzstan",
+"continent": "Asia",
+"lat": 42.8746,
+"lon": 74.5698,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Vientiane",
+"country": "Laos",
+"continent": "Asia",
+"lat": 17.9757,
+"lon": 102.6331,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Beirut",
+"country": "Lebanon",
+"continent": "Asia",
+"lat": 33.8938,
+"lon": 35.5018,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kuala Lumpur",
+"country": "Malaysia",
+"continent": "Asia",
+"lat": 3.139,
+"lon": 101.6869,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Malé",
+"country": "Maldives",
+"continent": "Asia",
+"lat": 4.1755,
+"lon": 73.5093,
+"isCapital": true,
+"aliases": [
+"male"
+]
+},
+{
+"city": "Ulaanbaatar",
+"country": "Mongolia",
+"continent": "Asia",
+"lat": 47.8864,
+"lon": 106.9057,
+"isCapital": true,
+"aliases": [
+"ulaan baatar",
+"ulan bator"
+]
+},
+{
+"city": "Naypyidaw",
+"country": "Myanmar",
+"continent": "Asia",
+"lat": 19.7633,
+"lon": 96.0785,
+"isCapital": true,
+"aliases": [
+"naypyitaw"
+]
+},
+{
+"city": "Kathmandu",
+"country": "Nepal",
+"continent": "Asia",
+"lat": 27.7172,
+"lon": 85.324,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Pyongyang",
+"country": "North Korea",
+"continent": "Asia",
+"lat": 39.0392,
+"lon": 125.7625,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Muscat",
+"country": "Oman",
+"continent": "Asia",
+"lat": 23.5859,
+"lon": 58.4059,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Islamabad",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 33.6844,
+"lon": 73.0479,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ramallah",
+"country": "Palestine",
+"continent": "Asia",
+"lat": 31.9038,
+"lon": 35.2034,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Manila",
+"country": "Philippines",
+"continent": "Asia",
+"lat": 14.5995,
+"lon": 120.9842,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Doha",
+"country": "Qatar",
+"continent": "Asia",
+"lat": 25.2854,
+"lon": 51.531,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Riyadh",
+"country": "Saudi Arabia",
+"continent": "Asia",
+"lat": 24.7136,
+"lon": 46.6753,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Singapore",
+"country": "Singapore",
+"continent": "Asia",
+"lat": 1.3521,
+"lon": 103.8198,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Seoul",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 37.5665,
+"lon": 126.978,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Colombo",
+"country": "Sri Lanka",
+"continent": "Asia",
+"lat": 6.9271,
+"lon": 79.8612,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Damascus",
+"country": "Syria",
+"continent": "Asia",
+"lat": 33.5138,
+"lon": 36.2765,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Taipei",
+"country": "Taiwan",
+"continent": "Asia",
+"lat": 25.033,
+"lon": 121.5654,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Dushanbe",
+"country": "Tajikistan",
+"continent": "Asia",
+"lat": 38.5598,
+"lon": 68.787,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bangkok",
+"country": "Thailand",
+"continent": "Asia",
+"lat": 13.7563,
+"lon": 100.5018,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Dili",
+"country": "Timor-Leste",
+"continent": "Asia",
+"lat": -8.5569,
+"lon": 125.5603,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ankara",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 39.9334,
+"lon": 32.8597,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ashgabat",
+"country": "Turkmenistan",
+"continent": "Asia",
+"lat": 37.9601,
+"lon": 58.3261,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Abu Dhabi",
+"country": "United Arab Emirates",
+"continent": "Asia",
+"lat": 24.4539,
+"lon": 54.3773,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Tashkent",
+"country": "Uzbekistan",
+"continent": "Asia",
+"lat": 41.2995,
+"lon": 69.2401,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Hanoi",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 21.0285,
+"lon": 105.8542,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Sana'a",
+"country": "Yemen",
+"continent": "Asia",
+"lat": 15.3694,
+"lon": 44.191,
+"isCapital": true,
+"aliases": [
+"sana",
+"sanaa"
+]
+},
+{
+"city": "Tirana",
+"country": "Albania",
+"continent": "Europe",
+"lat": 41.3275,
+"lon": 19.8187,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Andorra la Vella",
+"country": "Andorra",
+"continent": "Europe",
+"lat": 42.5063,
+"lon": 1.5218,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Vienna",
+"country": "Austria",
+"continent": "Europe",
+"lat": 48.2082,
+"lon": 16.3738,
+"isCapital": true,
+"aliases": [
+"wien"
+]
+},
+{
+"city": "Minsk",
+"country": "Belarus",
+"continent": "Europe",
+"lat": 53.9006,
+"lon": 27.559,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Brussels",
+"country": "Belgium",
+"continent": "Europe",
+"lat": 50.8503,
+"lon": 4.3517,
+"isCapital": true,
+"aliases": [
+"brussel",
+"bruxelles"
+]
+},
+{
+"city": "Sarajevo",
+"country": "Bosnia and Herzegovina",
+"continent": "Europe",
+"lat": 43.8563,
+"lon": 18.4131,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Sofia",
+"country": "Bulgaria",
+"continent": "Europe",
+"lat": 42.6977,
+"lon": 23.3219,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Zagreb",
+"country": "Croatia",
+"continent": "Europe",
+"lat": 45.815,
+"lon": 15.9819,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Nicosia",
+"country": "Cyprus",
+"continent": "Europe",
+"lat": 35.1856,
+"lon": 33.3823,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Prague",
+"country": "Czechia",
+"continent": "Europe",
+"lat": 50.0755,
+"lon": 14.4378,
+"isCapital": true,
+"aliases": [
+"praha"
+]
+},
+{
+"city": "Copenhagen",
+"country": "Denmark",
+"continent": "Europe",
+"lat": 55.6761,
+"lon": 12.5683,
+"isCapital": true,
+"aliases": [
+"kobenhavn",
+"koebenhavn"
+]
+},
+{
+"city": "Tallinn",
+"country": "Estonia",
+"continent": "Europe",
+"lat": 59.437,
+"lon": 24.7536,
+"isCapital": true,
+"aliases": [
+"tallin"
+]
+},
+{
+"city": "Helsinki",
+"country": "Finland",
+"continent": "Europe",
+"lat": 60.1699,
+"lon": 24.9384,
+"isCapital": true,
+"aliases": [
+"helsingfors"
+]
+},
+{
+"city": "Paris",
+"country": "France",
+"continent": "Europe",
+"lat": 48.8566,
+"lon": 2.3522,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Berlin",
+"country": "Germany",
+"continent": "Europe",
+"lat": 52.52,
+"lon": 13.405,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Athens",
+"country": "Greece",
+"continent": "Europe",
+"lat": 37.9838,
+"lon": 23.7275,
+"isCapital": true,
+"aliases": [
+"athina",
+"athinai"
+]
+},
+{
+"city": "Budapest",
+"country": "Hungary",
+"continent": "Europe",
+"lat": 47.4979,
+"lon": 19.0402,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Reykjavík",
+"country": "Iceland",
+"continent": "Europe",
+"lat": 64.1466,
+"lon": -21.9426,
+"isCapital": true,
+"aliases": [
+"reykjavik"
+]
+},
+{
+"city": "Dublin",
+"country": "Ireland",
+"continent": "Europe",
+"lat": 53.3498,
+"lon": -6.2603,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Rome",
+"country": "Italy",
+"continent": "Europe",
+"lat": 41.9028,
+"lon": 12.4964,
+"isCapital": true,
+"aliases": [
+"roma"
+]
+},
+{
+"city": "Pristina",
+"country": "Kosovo",
+"continent": "Europe",
+"lat": 42.6629,
+"lon": 21.1655,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Riga",
+"country": "Latvia",
+"continent": "Europe",
+"lat": 56.9496,
+"lon": 24.1052,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Vaduz",
+"country": "Liechtenstein",
+"continent": "Europe",
+"lat": 47.141,
+"lon": 9.5209,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Vilnius",
+"country": "Lithuania",
+"continent": "Europe",
+"lat": 54.6872,
+"lon": 25.2797,
+"isCapital": true,
+"aliases": [
+"wilno"
+]
+},
+{
+"city": "Luxembourg",
+"country": "Luxembourg",
+"continent": "Europe",
+"lat": 49.6116,
+"lon": 6.1319,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Valletta",
+"country": "Malta",
+"continent": "Europe",
+"lat": 35.8989,
+"lon": 14.5146,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Chișinău",
+"country": "Moldova",
+"continent": "Europe",
+"lat": 47.0105,
+"lon": 28.8638,
+"isCapital": true,
+"aliases": [
+"chisinau"
+]
+},
+{
+"city": "Monaco",
+"country": "Monaco",
+"continent": "Europe",
+"lat": 43.7384,
+"lon": 7.4246,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Podgorica",
+"country": "Montenegro",
+"continent": "Europe",
+"lat": 42.4304,
+"lon": 19.2594,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Amsterdam",
+"country": "Netherlands",
+"continent": "Europe",
+"lat": 52.3676,
+"lon": 4.9041,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Skopje",
+"country": "North Macedonia",
+"continent": "Europe",
+"lat": 41.9981,
+"lon": 21.4254,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Oslo",
+"country": "Norway",
+"continent": "Europe",
+"lat": 59.9139,
+"lon": 10.7522,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Warsaw",
+"country": "Poland",
+"continent": "Europe",
+"lat": 52.2297,
+"lon": 21.0122,
+"isCapital": true,
+"aliases": [
+"warszawa"
+]
+},
+{
+"city": "Lisbon",
+"country": "Portugal",
+"continent": "Europe",
+"lat": 38.7223,
+"lon": -9.1393,
+"isCapital": true,
+"aliases": [
+"lisboa"
+]
+},
+{
+"city": "Bucharest",
+"country": "Romania",
+"continent": "Europe",
+"lat": 44.4268,
+"lon": 26.1025,
+"isCapital": true,
+"aliases": [
+"bucuresti"
+]
+},
+{
+"city": "Moscow",
+"country": "Russia",
+"continent": "Europe",
+"lat": 55.7558,
+"lon": 37.6173,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "San Marino",
+"country": "San Marino",
+"continent": "Europe",
+"lat": 43.9424,
+"lon": 12.4578,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Belgrade",
+"country": "Serbia",
+"continent": "Europe",
+"lat": 44.7866,
+"lon": 20.4489,
+"isCapital": true,
+"aliases": [
+"beograd"
+]
+},
+{
+"city": "Bratislava",
+"country": "Slovakia",
+"continent": "Europe",
+"lat": 48.1486,
+"lon": 17.1077,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ljubljana",
+"country": "Slovenia",
+"continent": "Europe",
+"lat": 46.0569,
+"lon": 14.5058,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Madrid",
+"country": "Spain",
+"continent": "Europe",
+"lat": 40.4168,
+"lon": -3.7038,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Stockholm",
+"country": "Sweden",
+"continent": "Europe",
+"lat": 59.3293,
+"lon": 18.0686,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bern",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 46.948,
+"lon": 7.4474,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kyiv",
+"country": "Ukraine",
+"continent": "Europe",
+"lat": 50.4501,
+"lon": 30.5234,
+"isCapital": true,
+"aliases": [
+"kiev"
+]
+},
+{
+"city": "London",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 51.5074,
+"lon": -0.1278,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Vatican City",
+"country": "Vatican City",
+"continent": "Europe",
+"lat": 41.9029,
+"lon": 12.4534,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Saint John's",
+"country": "Antigua and Barbuda",
+"continent": "North America",
+"lat": 17.1175,
+"lon": -61.8456,
+"isCapital": true,
+"aliases": [
+"saint johns",
+"st johns",
+"st. john's"
+]
+},
+{
+"city": "Nassau",
+"country": "Bahamas",
+"continent": "North America",
+"lat": 25.048,
+"lon": -77.3554,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bridgetown",
+"country": "Barbados",
+"continent": "North America",
+"lat": 13.1939,
+"lon": -59.5432,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Belmopan",
+"country": "Belize",
+"continent": "North America",
+"lat": 17.251,
+"lon": -88.759,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ottawa",
+"country": "Canada",
+"continent": "North America",
+"lat": 45.4215,
+"lon": -75.6972,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "San José",
+"country": "Costa Rica",
+"continent": "North America",
+"lat": 9.9281,
+"lon": -84.0907,
+"isCapital": true,
+"aliases": [
+"san jose"
+]
+},
+{
+"city": "Havana",
+"country": "Cuba",
+"continent": "North America",
+"lat": 23.1136,
+"lon": -82.3666,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Roseau",
+"country": "Dominica",
+"continent": "North America",
+"lat": 15.3017,
+"lon": -61.3879,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Santo Domingo",
+"country": "Dominican Republic",
+"continent": "North America",
+"lat": 18.4861,
+"lon": -69.9312,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "San Salvador",
+"country": "El Salvador",
+"continent": "North America",
+"lat": 13.6929,
+"lon": -89.2182,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Saint George's",
+"country": "Grenada",
+"continent": "North America",
+"lat": 12.0561,
+"lon": -61.7488,
+"isCapital": true,
+"aliases": [
+"saint georges",
+"st georges"
+]
+},
+{
+"city": "Guatemala City",
+"country": "Guatemala",
+"continent": "North America",
+"lat": 14.6349,
+"lon": -90.5069,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Port-au-Prince",
+"country": "Haiti",
+"continent": "North America",
+"lat": 18.5944,
+"lon": -72.3074,
+"isCapital": true,
+"aliases": [
+"port au prince"
+]
+},
+{
+"city": "Tegucigalpa",
+"country": "Honduras",
+"continent": "North America",
+"lat": 14.0723,
+"lon": -87.1921,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kingston",
+"country": "Jamaica",
+"continent": "North America",
+"lat": 17.9714,
+"lon": -76.7931,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Mexico City",
+"country": "Mexico",
+"continent": "North America",
+"lat": 19.4326,
+"lon": -99.1332,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Managua",
+"country": "Nicaragua",
+"continent": "North America",
+"lat": 12.1149,
+"lon": -86.2362,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Panama City",
+"country": "Panama",
+"continent": "North America",
+"lat": 8.9824,
+"lon": -79.5199,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Basseterre",
+"country": "Saint Kitts and Nevis",
+"continent": "North America",
+"lat": 17.2955,
+"lon": -62.7261,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Castries",
+"country": "Saint Lucia",
+"continent": "North America",
+"lat": 14.0101,
+"lon": -60.9875,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Kingstown",
+"country": "Saint Vincent and the Grenadines",
+"continent": "North America",
+"lat": 13.16,
+"lon": -61.2248,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Port of Spain",
+"country": "Trinidad and Tobago",
+"continent": "North America",
+"lat": 10.6549,
+"lon": -61.5019,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Washington",
+"country": "United States",
+"continent": "North America",
+"lat": 38.9072,
+"lon": -77.0369,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Buenos Aires",
+"country": "Argentina",
+"continent": "South America",
+"lat": -34.6037,
+"lon": -58.3816,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "La Paz",
+"country": "Bolivia",
+"continent": "South America",
+"lat": -16.5,
+"lon": -68.1193,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Brasília",
+"country": "Brazil",
+"continent": "South America",
+"lat": -15.7975,
+"lon": -47.8919,
+"isCapital": true,
+"aliases": [
+"brasilia"
+]
+},
+{
+"city": "Santiago",
+"country": "Chile",
+"continent": "South America",
+"lat": -33.4489,
+"lon": -70.6693,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Bogotá",
+"country": "Colombia",
+"continent": "South America",
+"lat": 4.711,
+"lon": -74.0721,
+"isCapital": true,
+"aliases": [
+"bogota"
+]
+},
+{
+"city": "Quito",
+"country": "Ecuador",
+"continent": "South America",
+"lat": -0.1807,
+"lon": -78.4678,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Georgetown",
+"country": "Guyana",
+"continent": "South America",
+"lat": 6.8013,
+"lon": -58.1551,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Asunción",
+"country": "Paraguay",
+"continent": "South America",
+"lat": -25.2637,
+"lon": -57.5759,
+"isCapital": true,
+"aliases": [
+"asuncion"
+]
+},
+{
+"city": "Lima",
+"country": "Peru",
+"continent": "South America",
+"lat": -12.0464,
+"lon": -77.0428,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Paramaribo",
+"country": "Suriname",
+"continent": "South America",
+"lat": 5.852,
+"lon": -55.2038,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Montevideo",
+"country": "Uruguay",
+"continent": "South America",
+"lat": -34.9011,
+"lon": -56.1645,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Caracas",
+"country": "Venezuela",
+"continent": "South America",
+"lat": 10.4806,
+"lon": -66.9036,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Canberra",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -35.2809,
+"lon": 149.13,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Suva",
+"country": "Fiji",
+"continent": "Oceania",
+"lat": -18.1248,
+"lon": 178.4501,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Tarawa",
+"country": "Kiribati",
+"continent": "Oceania",
+"lat": 1.329,
+"lon": 172.979,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Majuro",
+"country": "Marshall Islands",
+"continent": "Oceania",
+"lat": 7.1164,
+"lon": 171.1858,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Palikir",
+"country": "Micronesia",
+"continent": "Oceania",
+"lat": 6.9248,
+"lon": 158.1611,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Yaren",
+"country": "Nauru",
+"continent": "Oceania",
+"lat": -0.5477,
+"lon": 166.9209,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Wellington",
+"country": "New Zealand",
+"continent": "Oceania",
+"lat": -41.2865,
+"lon": 174.7762,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Ngerulmud",
+"country": "Palau",
+"continent": "Oceania",
+"lat": 7.5006,
+"lon": 134.6242,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Port Moresby",
+"country": "Papua New Guinea",
+"continent": "Oceania",
+"lat": -9.4438,
+"lon": 147.1803,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Apia",
+"country": "Samoa",
+"continent": "Oceania",
+"lat": -13.8506,
+"lon": -171.7513,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Honiara",
+"country": "Solomon Islands",
+"continent": "Oceania",
+"lat": -9.4319,
+"lon": 159.9556,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Nukuʻalofa",
+"country": "Tonga",
+"continent": "Oceania",
+"lat": -21.1789,
+"lon": -175.1982,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Funafuti",
+"country": "Tuvalu",
+"continent": "Oceania",
+"lat": -8.5211,
+"lon": 179.1962,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "Port Vila",
+"country": "Vanuatu",
+"continent": "Oceania",
+"lat": -17.7334,
+"lon": 168.3273,
+"isCapital": true,
+"aliases": []
+},
+{
+"city": "New York",
+"country": "United States",
+"continent": "North America",
+"lat": 40.7128,
+"lon": -74.006,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Los Angeles",
+"country": "United States",
+"continent": "North America",
+"lat": 34.0522,
+"lon": -118.2437,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chicago",
+"country": "United States",
+"continent": "North America",
+"lat": 41.8781,
+"lon": -87.6298,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Houston",
+"country": "United States",
+"continent": "North America",
+"lat": 29.7604,
+"lon": -95.3698,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Phoenix",
+"country": "United States",
+"continent": "North America",
+"lat": 33.4484,
+"lon": -112.074,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Philadelphia",
+"country": "United States",
+"continent": "North America",
+"lat": 39.9526,
+"lon": -75.1652,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "San Antonio",
+"country": "United States",
+"continent": "North America",
+"lat": 29.4241,
+"lon": -98.4936,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "San Diego",
+"country": "United States",
+"continent": "North America",
+"lat": 32.7157,
+"lon": -117.1611,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dallas",
+"country": "United States",
+"continent": "North America",
+"lat": 32.7767,
+"lon": -96.797,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "San Jose",
+"country": "United States",
+"continent": "North America",
+"lat": 37.3382,
+"lon": -121.8863,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Austin",
+"country": "United States",
+"continent": "North America",
+"lat": 30.2672,
+"lon": -97.7431,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Jacksonville",
+"country": "United States",
+"continent": "North America",
+"lat": 30.3322,
+"lon": -81.6557,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Fort Worth",
+"country": "United States",
+"continent": "North America",
+"lat": 32.7555,
+"lon": -97.3308,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Columbus",
+"country": "United States",
+"continent": "North America",
+"lat": 39.9612,
+"lon": -82.9988,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Charlotte",
+"country": "United States",
+"continent": "North America",
+"lat": 35.2271,
+"lon": -80.8431,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Indianapolis",
+"country": "United States",
+"continent": "North America",
+"lat": 39.7684,
+"lon": -86.1581,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "San Francisco",
+"country": "United States",
+"continent": "North America",
+"lat": 37.7749,
+"lon": -122.4194,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Seattle",
+"country": "United States",
+"continent": "North America",
+"lat": 47.6062,
+"lon": -122.3321,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Denver",
+"country": "United States",
+"continent": "North America",
+"lat": 39.7392,
+"lon": -104.9903,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Boston",
+"country": "United States",
+"continent": "North America",
+"lat": 42.3601,
+"lon": -71.0589,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Detroit",
+"country": "United States",
+"continent": "North America",
+"lat": 42.3314,
+"lon": -83.0458,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Memphis",
+"country": "United States",
+"continent": "North America",
+"lat": 35.1495,
+"lon": -90.049,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Portland",
+"country": "United States",
+"continent": "North America",
+"lat": 45.5152,
+"lon": -122.6784,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Las Vegas",
+"country": "United States",
+"continent": "North America",
+"lat": 36.1699,
+"lon": -115.1398,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Baltimore",
+"country": "United States",
+"continent": "North America",
+"lat": 39.2904,
+"lon": -76.6122,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Milwaukee",
+"country": "United States",
+"continent": "North America",
+"lat": 43.0389,
+"lon": -87.9065,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Albuquerque",
+"country": "United States",
+"continent": "North America",
+"lat": 35.0844,
+"lon": -106.6504,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tucson",
+"country": "United States",
+"continent": "North America",
+"lat": 32.2226,
+"lon": -110.9747,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sacramento",
+"country": "United States",
+"continent": "North America",
+"lat": 38.5816,
+"lon": -121.4944,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Atlanta",
+"country": "United States",
+"continent": "North America",
+"lat": 33.749,
+"lon": -84.388,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Miami",
+"country": "United States",
+"continent": "North America",
+"lat": 25.7617,
+"lon": -80.1918,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cleveland",
+"country": "United States",
+"continent": "North America",
+"lat": 41.4993,
+"lon": -81.6944,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tampa",
+"country": "United States",
+"continent": "North America",
+"lat": 27.9506,
+"lon": -82.4572,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Orlando",
+"country": "United States",
+"continent": "North America",
+"lat": 28.5383,
+"lon": -81.3792,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Pittsburgh",
+"country": "United States",
+"continent": "North America",
+"lat": 40.4406,
+"lon": -79.9959,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Minneapolis",
+"country": "United States",
+"continent": "North America",
+"lat": 44.9778,
+"lon": -93.265,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cincinnati",
+"country": "United States",
+"continent": "North America",
+"lat": 39.1031,
+"lon": -84.512,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "St. Louis",
+"country": "United States",
+"continent": "North America",
+"lat": 38.627,
+"lon": -90.1994,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kansas City",
+"country": "United States",
+"continent": "North America",
+"lat": 39.0997,
+"lon": -94.5786,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Salt Lake City",
+"country": "United States",
+"continent": "North America",
+"lat": 40.7608,
+"lon": -111.891,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Honolulu",
+"country": "United States",
+"continent": "North America",
+"lat": 21.3099,
+"lon": -157.8581,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Anchorage",
+"country": "United States",
+"continent": "North America",
+"lat": 61.2181,
+"lon": -149.9003,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "New Orleans",
+"country": "United States",
+"continent": "North America",
+"lat": 29.9511,
+"lon": -90.0715,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Buffalo",
+"country": "United States",
+"continent": "North America",
+"lat": 42.8864,
+"lon": -78.8784,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Raleigh",
+"country": "United States",
+"continent": "North America",
+"lat": 35.7796,
+"lon": -78.6382,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nashville",
+"country": "United States",
+"continent": "North America",
+"lat": 36.1627,
+"lon": -86.7816,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Toronto",
+"country": "Canada",
+"continent": "North America",
+"lat": 43.6532,
+"lon": -79.3832,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Montreal",
+"country": "Canada",
+"continent": "North America",
+"lat": 45.5017,
+"lon": -73.5673,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Vancouver",
+"country": "Canada",
+"continent": "North America",
+"lat": 49.2827,
+"lon": -123.1207,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Calgary",
+"country": "Canada",
+"continent": "North America",
+"lat": 51.0447,
+"lon": -114.0719,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Edmonton",
+"country": "Canada",
+"continent": "North America",
+"lat": 53.5461,
+"lon": -113.4938,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Winnipeg",
+"country": "Canada",
+"continent": "North America",
+"lat": 49.8951,
+"lon": -97.1384,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Quebec City",
+"country": "Canada",
+"continent": "North America",
+"lat": 46.8139,
+"lon": -71.208,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Halifax",
+"country": "Canada",
+"continent": "North America",
+"lat": 44.6488,
+"lon": -63.5752,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hamilton",
+"country": "Canada",
+"continent": "North America",
+"lat": 43.2557,
+"lon": -79.8711,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kitchener",
+"country": "Canada",
+"continent": "North America",
+"lat": 43.4516,
+"lon": -80.4925,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "London",
+"country": "Canada",
+"continent": "North America",
+"lat": 42.9849,
+"lon": -81.2453,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Saskatoon",
+"country": "Canada",
+"continent": "North America",
+"lat": 52.1332,
+"lon": -106.67,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Regina",
+"country": "Canada",
+"continent": "North America",
+"lat": 50.4452,
+"lon": -104.6189,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Victoria",
+"country": "Canada",
+"continent": "North America",
+"lat": 48.4284,
+"lon": -123.3656,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "St. John's",
+"country": "Canada",
+"continent": "North America",
+"lat": 47.5615,
+"lon": -52.7126,
+"isCapital": false,
+"aliases": [
+"st. johns"
+]
+},
+{
+"city": "Guadalajara",
+"country": "Mexico",
+"continent": "North America",
+"lat": 20.6597,
+"lon": -103.3496,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Monterrey",
+"country": "Mexico",
+"continent": "North America",
+"lat": 25.6866,
+"lon": -100.3161,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Puebla",
+"country": "Mexico",
+"continent": "North America",
+"lat": 19.0414,
+"lon": -98.2063,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tijuana",
+"country": "Mexico",
+"continent": "North America",
+"lat": 32.5149,
+"lon": -117.0382,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "León",
+"country": "Mexico",
+"continent": "North America",
+"lat": 21.125,
+"lon": -101.686,
+"isCapital": false,
+"aliases": [
+"leon"
+]
+},
+{
+"city": "Cancún",
+"country": "Mexico",
+"continent": "North America",
+"lat": 21.1619,
+"lon": -86.8515,
+"isCapital": false,
+"aliases": [
+"cancun"
+]
+},
+{
+"city": "Mérida",
+"country": "Mexico",
+"continent": "North America",
+"lat": 20.9674,
+"lon": -89.5926,
+"isCapital": false,
+"aliases": [
+"merida"
+]
+},
+{
+"city": "Acapulco",
+"country": "Mexico",
+"continent": "North America",
+"lat": 16.8531,
+"lon": -99.8237,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Veracruz",
+"country": "Mexico",
+"continent": "North America",
+"lat": 19.1738,
+"lon": -96.1342,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Oaxaca",
+"country": "Mexico",
+"continent": "North America",
+"lat": 17.0732,
+"lon": -96.7266,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "São Paulo",
+"country": "Brazil",
+"continent": "South America",
+"lat": -23.5505,
+"lon": -46.6333,
+"isCapital": false,
+"aliases": [
+"sao paulo"
+]
+},
+{
+"city": "Rio de Janeiro",
+"country": "Brazil",
+"continent": "South America",
+"lat": -22.9068,
+"lon": -43.1729,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Salvador",
+"country": "Brazil",
+"continent": "South America",
+"lat": -12.9714,
+"lon": -38.5014,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Fortaleza",
+"country": "Brazil",
+"continent": "South America",
+"lat": -3.7172,
+"lon": -38.5433,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Belo Horizonte",
+"country": "Brazil",
+"continent": "South America",
+"lat": -19.9167,
+"lon": -43.9345,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Manaus",
+"country": "Brazil",
+"continent": "South America",
+"lat": -3.119,
+"lon": -60.0217,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Curitiba",
+"country": "Brazil",
+"continent": "South America",
+"lat": -25.4284,
+"lon": -49.2733,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Recife",
+"country": "Brazil",
+"continent": "South America",
+"lat": -8.0476,
+"lon": -34.877,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Porto Alegre",
+"country": "Brazil",
+"continent": "South America",
+"lat": -30.0346,
+"lon": -51.2177,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Belém",
+"country": "Brazil",
+"continent": "South America",
+"lat": -1.4558,
+"lon": -48.4902,
+"isCapital": false,
+"aliases": [
+"belem"
+]
+},
+{
+"city": "Goiânia",
+"country": "Brazil",
+"continent": "South America",
+"lat": -16.6869,
+"lon": -49.2648,
+"isCapital": false,
+"aliases": [
+"goiania"
+]
+},
+{
+"city": "Campinas",
+"country": "Brazil",
+"continent": "South America",
+"lat": -22.9099,
+"lon": -47.0626,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Florianópolis",
+"country": "Brazil",
+"continent": "South America",
+"lat": -27.5954,
+"lon": -48.548,
+"isCapital": false,
+"aliases": [
+"florianopolis"
+]
+},
+{
+"city": "Córdoba",
+"country": "Argentina",
+"continent": "South America",
+"lat": -31.4201,
+"lon": -64.1888,
+"isCapital": false,
+"aliases": [
+"cordoba"
+]
+},
+{
+"city": "Rosario",
+"country": "Argentina",
+"continent": "South America",
+"lat": -32.9442,
+"lon": -60.6505,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mendoza",
+"country": "Argentina",
+"continent": "South America",
+"lat": -32.8895,
+"lon": -68.8458,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "La Plata",
+"country": "Argentina",
+"continent": "South America",
+"lat": -34.9215,
+"lon": -57.9545,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mar del Plata",
+"country": "Argentina",
+"continent": "South America",
+"lat": -38.0023,
+"lon": -57.5575,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Medellín",
+"country": "Colombia",
+"continent": "South America",
+"lat": 6.2476,
+"lon": -75.5658,
+"isCapital": false,
+"aliases": [
+"medellin"
+]
+},
+{
+"city": "Cali",
+"country": "Colombia",
+"continent": "South America",
+"lat": 3.4516,
+"lon": -76.532,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cartagena",
+"country": "Colombia",
+"continent": "South America",
+"lat": 10.391,
+"lon": -75.4794,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Barranquilla",
+"country": "Colombia",
+"continent": "South America",
+"lat": 10.9685,
+"lon": -74.7813,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Guayaquil",
+"country": "Ecuador",
+"continent": "South America",
+"lat": -2.1709,
+"lon": -79.9224,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cuenca",
+"country": "Ecuador",
+"continent": "South America",
+"lat": -2.9006,
+"lon": -79.0045,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Arequipa",
+"country": "Peru",
+"continent": "South America",
+"lat": -16.409,
+"lon": -71.5375,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cusco",
+"country": "Peru",
+"continent": "South America",
+"lat": -13.5319,
+"lon": -71.9675,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Trujillo",
+"country": "Peru",
+"continent": "South America",
+"lat": -8.1116,
+"lon": -79.0288,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Maracaibo",
+"country": "Venezuela",
+"continent": "South America",
+"lat": 10.6427,
+"lon": -71.6125,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Valencia",
+"country": "Venezuela",
+"continent": "South America",
+"lat": 10.162,
+"lon": -68.0078,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Concepción",
+"country": "Chile",
+"continent": "South America",
+"lat": -36.8201,
+"lon": -73.0444,
+"isCapital": false,
+"aliases": [
+"concepcion"
+]
+},
+{
+"city": "Valparaíso",
+"country": "Chile",
+"continent": "South America",
+"lat": -33.0472,
+"lon": -71.6127,
+"isCapital": false,
+"aliases": [
+"valparaiso"
+]
+},
+{
+"city": "Manchester",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 53.4808,
+"lon": -2.2426,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Birmingham",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 52.4862,
+"lon": -1.8904,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Liverpool",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 53.4084,
+"lon": -2.9916,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Leeds",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 53.8008,
+"lon": -1.5491,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Glasgow",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 55.8642,
+"lon": -4.2518,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Edinburgh",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 55.9533,
+"lon": -3.1883,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bristol",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 51.4545,
+"lon": -2.5879,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sheffield",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 53.3811,
+"lon": -1.4701,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Newcastle upon Tyne",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 54.9783,
+"lon": -1.6178,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cardiff",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 51.4816,
+"lon": -3.1791,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Belfast",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 54.5973,
+"lon": -5.9301,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Oxford",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 51.752,
+"lon": -1.2577,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cambridge",
+"country": "United Kingdom",
+"continent": "Europe",
+"lat": 52.2053,
+"lon": 0.1218,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cork",
+"country": "Ireland",
+"continent": "Europe",
+"lat": 51.8985,
+"lon": -8.4756,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Galway",
+"country": "Ireland",
+"continent": "Europe",
+"lat": 53.2707,
+"lon": -9.0568,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Marseille",
+"country": "France",
+"continent": "Europe",
+"lat": 43.2965,
+"lon": 5.3698,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lyon",
+"country": "France",
+"continent": "Europe",
+"lat": 45.764,
+"lon": 4.8357,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Toulouse",
+"country": "France",
+"continent": "Europe",
+"lat": 43.6047,
+"lon": 1.4442,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nice",
+"country": "France",
+"continent": "Europe",
+"lat": 43.7102,
+"lon": 7.262,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nantes",
+"country": "France",
+"continent": "Europe",
+"lat": 47.2184,
+"lon": -1.5536,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Strasbourg",
+"country": "France",
+"continent": "Europe",
+"lat": 48.5734,
+"lon": 7.7521,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bordeaux",
+"country": "France",
+"continent": "Europe",
+"lat": 44.8378,
+"lon": -0.5792,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lille",
+"country": "France",
+"continent": "Europe",
+"lat": 50.6292,
+"lon": 3.0573,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Rennes",
+"country": "France",
+"continent": "Europe",
+"lat": 48.1173,
+"lon": -1.6778,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Montpellier",
+"country": "France",
+"continent": "Europe",
+"lat": 43.6108,
+"lon": 3.8767,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cannes",
+"country": "France",
+"continent": "Europe",
+"lat": 43.5528,
+"lon": 7.0174,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hamburg",
+"country": "Germany",
+"continent": "Europe",
+"lat": 53.5511,
+"lon": 9.9937,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Munich",
+"country": "Germany",
+"continent": "Europe",
+"lat": 48.1351,
+"lon": 11.582,
+"isCapital": false,
+"aliases": [
+"muenchen",
+"munchen"
+]
+},
+{
+"city": "Cologne",
+"country": "Germany",
+"continent": "Europe",
+"lat": 50.9375,
+"lon": 6.9603,
+"isCapital": false,
+"aliases": [
+"koeln",
+"koln"
+]
+},
+{
+"city": "Frankfurt",
+"country": "Germany",
+"continent": "Europe",
+"lat": 50.1109,
+"lon": 8.6821,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Stuttgart",
+"country": "Germany",
+"continent": "Europe",
+"lat": 48.7758,
+"lon": 9.1829,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Düsseldorf",
+"country": "Germany",
+"continent": "Europe",
+"lat": 51.2277,
+"lon": 6.7735,
+"isCapital": false,
+"aliases": [
+"dusseldorf"
+]
+},
+{
+"city": "Leipzig",
+"country": "Germany",
+"continent": "Europe",
+"lat": 51.3397,
+"lon": 12.3731,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dortmund",
+"country": "Germany",
+"continent": "Europe",
+"lat": 51.5136,
+"lon": 7.4653,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Essen",
+"country": "Germany",
+"continent": "Europe",
+"lat": 51.4556,
+"lon": 7.0116,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bremen",
+"country": "Germany",
+"continent": "Europe",
+"lat": 53.0793,
+"lon": 8.8017,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hannover",
+"country": "Germany",
+"continent": "Europe",
+"lat": 52.3759,
+"lon": 9.732,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nuremberg",
+"country": "Germany",
+"continent": "Europe",
+"lat": 49.4521,
+"lon": 11.0767,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dresden",
+"country": "Germany",
+"continent": "Europe",
+"lat": 51.0504,
+"lon": 13.7373,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bonn",
+"country": "Germany",
+"continent": "Europe",
+"lat": 50.7374,
+"lon": 7.0982,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Heidelberg",
+"country": "Germany",
+"continent": "Europe",
+"lat": 49.3988,
+"lon": 8.6724,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Milan",
+"country": "Italy",
+"continent": "Europe",
+"lat": 45.4642,
+"lon": 9.19,
+"isCapital": false,
+"aliases": [
+"milano"
+]
+},
+{
+"city": "Naples",
+"country": "Italy",
+"continent": "Europe",
+"lat": 40.8518,
+"lon": 14.2681,
+"isCapital": false,
+"aliases": [
+"napoli"
+]
+},
+{
+"city": "Turin",
+"country": "Italy",
+"continent": "Europe",
+"lat": 45.0703,
+"lon": 7.6869,
+"isCapital": false,
+"aliases": [
+"torino"
+]
+},
+{
+"city": "Palermo",
+"country": "Italy",
+"continent": "Europe",
+"lat": 38.1157,
+"lon": 13.3613,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Genoa",
+"country": "Italy",
+"continent": "Europe",
+"lat": 44.4056,
+"lon": 8.9463,
+"isCapital": false,
+"aliases": [
+"genova"
+]
+},
+{
+"city": "Bologna",
+"country": "Italy",
+"continent": "Europe",
+"lat": 44.4949,
+"lon": 11.3426,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Florence",
+"country": "Italy",
+"continent": "Europe",
+"lat": 43.7696,
+"lon": 11.2558,
+"isCapital": false,
+"aliases": [
+"firenze"
+]
+},
+{
+"city": "Catania",
+"country": "Italy",
+"continent": "Europe",
+"lat": 37.5079,
+"lon": 15.083,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bari",
+"country": "Italy",
+"continent": "Europe",
+"lat": 41.1171,
+"lon": 16.8719,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Venice",
+"country": "Italy",
+"continent": "Europe",
+"lat": 45.4408,
+"lon": 12.3155,
+"isCapital": false,
+"aliases": [
+"venezia"
+]
+},
+{
+"city": "Verona",
+"country": "Italy",
+"continent": "Europe",
+"lat": 45.4384,
+"lon": 10.9916,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Pisa",
+"country": "Italy",
+"continent": "Europe",
+"lat": 43.7228,
+"lon": 10.4017,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Barcelona",
+"country": "Spain",
+"continent": "Europe",
+"lat": 41.3851,
+"lon": 2.1734,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Valencia",
+"country": "Spain",
+"continent": "Europe",
+"lat": 39.4699,
+"lon": -0.3763,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Seville",
+"country": "Spain",
+"continent": "Europe",
+"lat": 37.3891,
+"lon": -5.9845,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Zaragoza",
+"country": "Spain",
+"continent": "Europe",
+"lat": 41.6488,
+"lon": -0.8891,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Málaga",
+"country": "Spain",
+"continent": "Europe",
+"lat": 36.7213,
+"lon": -4.4214,
+"isCapital": false,
+"aliases": [
+"malaga"
+]
+},
+{
+"city": "Murcia",
+"country": "Spain",
+"continent": "Europe",
+"lat": 37.9922,
+"lon": -1.1307,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bilbao",
+"country": "Spain",
+"continent": "Europe",
+"lat": 43.263,
+"lon": -2.935,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Granada",
+"country": "Spain",
+"continent": "Europe",
+"lat": 37.1773,
+"lon": -3.5986,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Córdoba",
+"country": "Spain",
+"continent": "Europe",
+"lat": 37.8882,
+"lon": -4.7794,
+"isCapital": false,
+"aliases": [
+"cordoba"
+]
+},
+{
+"city": "Palma",
+"country": "Spain",
+"continent": "Europe",
+"lat": 39.5696,
+"lon": 2.6502,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Porto",
+"country": "Portugal",
+"continent": "Europe",
+"lat": 41.1579,
+"lon": -8.6291,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Braga",
+"country": "Portugal",
+"continent": "Europe",
+"lat": 41.5454,
+"lon": -8.4265,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Coimbra",
+"country": "Portugal",
+"continent": "Europe",
+"lat": 40.2033,
+"lon": -8.4103,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Faro",
+"country": "Portugal",
+"continent": "Europe",
+"lat": 37.0193,
+"lon": -7.9304,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Rotterdam",
+"country": "Netherlands",
+"continent": "Europe",
+"lat": 51.9244,
+"lon": 4.4777,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "The Hague",
+"country": "Netherlands",
+"continent": "Europe",
+"lat": 52.0705,
+"lon": 4.3007,
+"isCapital": false,
+"aliases": [
+"den haag"
+]
+},
+{
+"city": "Utrecht",
+"country": "Netherlands",
+"continent": "Europe",
+"lat": 52.0907,
+"lon": 5.1214,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Eindhoven",
+"country": "Netherlands",
+"continent": "Europe",
+"lat": 51.4416,
+"lon": 5.4697,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Antwerp",
+"country": "Belgium",
+"continent": "Europe",
+"lat": 51.2194,
+"lon": 4.4025,
+"isCapital": false,
+"aliases": [
+"antwerpen"
+]
+},
+{
+"city": "Ghent",
+"country": "Belgium",
+"continent": "Europe",
+"lat": 51.0543,
+"lon": 3.7174,
+"isCapital": false,
+"aliases": [
+"gand",
+"gent"
+]
+},
+{
+"city": "Bruges",
+"country": "Belgium",
+"continent": "Europe",
+"lat": 51.2093,
+"lon": 3.2247,
+"isCapital": false,
+"aliases": [
+"brugge"
+]
+},
+{
+"city": "Liège",
+"country": "Belgium",
+"continent": "Europe",
+"lat": 50.6326,
+"lon": 5.5797,
+"isCapital": false,
+"aliases": [
+"liege"
+]
+},
+{
+"city": "Zurich",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 47.3769,
+"lon": 8.5417,
+"isCapital": false,
+"aliases": [
+"zuerich"
+]
+},
+{
+"city": "Geneva",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 46.2044,
+"lon": 6.1432,
+"isCapital": false,
+"aliases": [
+"geneve",
+"genf"
+]
+},
+{
+"city": "Basel",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 47.5596,
+"lon": 7.5886,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lausanne",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 46.5197,
+"lon": 6.6323,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lucerne",
+"country": "Switzerland",
+"continent": "Europe",
+"lat": 47.0502,
+"lon": 8.3093,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Salzburg",
+"country": "Austria",
+"continent": "Europe",
+"lat": 47.8095,
+"lon": 13.055,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Innsbruck",
+"country": "Austria",
+"continent": "Europe",
+"lat": 47.2692,
+"lon": 11.4041,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Graz",
+"country": "Austria",
+"continent": "Europe",
+"lat": 47.0707,
+"lon": 15.4395,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Gothenburg",
+"country": "Sweden",
+"continent": "Europe",
+"lat": 57.7089,
+"lon": 11.9746,
+"isCapital": false,
+"aliases": [
+"goeteborg",
+"goteborg"
+]
+},
+{
+"city": "Malmö",
+"country": "Sweden",
+"continent": "Europe",
+"lat": 55.6049,
+"lon": 13.0038,
+"isCapital": false,
+"aliases": [
+"malmo"
+]
+},
+{
+"city": "Bergen",
+"country": "Norway",
+"continent": "Europe",
+"lat": 60.3913,
+"lon": 5.3221,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Trondheim",
+"country": "Norway",
+"continent": "Europe",
+"lat": 63.4305,
+"lon": 10.3951,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Aarhus",
+"country": "Denmark",
+"continent": "Europe",
+"lat": 56.1629,
+"lon": 10.2039,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tampere",
+"country": "Finland",
+"continent": "Europe",
+"lat": 61.4978,
+"lon": 23.761,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Turku",
+"country": "Finland",
+"continent": "Europe",
+"lat": 60.4518,
+"lon": 22.2666,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kraków",
+"country": "Poland",
+"continent": "Europe",
+"lat": 50.0647,
+"lon": 19.945,
+"isCapital": false,
+"aliases": [
+"krakow"
+]
+},
+{
+"city": "Łódź",
+"country": "Poland",
+"continent": "Europe",
+"lat": 51.7592,
+"lon": 19.456,
+"isCapital": false,
+"aliases": [
+"łodz"
+]
+},
+{
+"city": "Wrocław",
+"country": "Poland",
+"continent": "Europe",
+"lat": 51.1079,
+"lon": 17.0385,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Poznań",
+"country": "Poland",
+"continent": "Europe",
+"lat": 52.4064,
+"lon": 16.9252,
+"isCapital": false,
+"aliases": [
+"poznan"
+]
+},
+{
+"city": "Gdańsk",
+"country": "Poland",
+"continent": "Europe",
+"lat": 54.352,
+"lon": 18.6466,
+"isCapital": false,
+"aliases": [
+"gdansk"
+]
+},
+{
+"city": "Brno",
+"country": "Czechia",
+"continent": "Europe",
+"lat": 49.1951,
+"lon": 16.6068,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Ostrava",
+"country": "Czechia",
+"continent": "Europe",
+"lat": 49.8209,
+"lon": 18.2625,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Košice",
+"country": "Slovakia",
+"continent": "Europe",
+"lat": 48.7164,
+"lon": 21.2611,
+"isCapital": false,
+"aliases": [
+"kosice"
+]
+},
+{
+"city": "Debrecen",
+"country": "Hungary",
+"continent": "Europe",
+"lat": 47.5316,
+"lon": 21.6273,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Szeged",
+"country": "Hungary",
+"continent": "Europe",
+"lat": 46.253,
+"lon": 20.1414,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cluj-Napoca",
+"country": "Romania",
+"continent": "Europe",
+"lat": 46.7712,
+"lon": 23.6236,
+"isCapital": false,
+"aliases": [
+"cluj napoca"
+]
+},
+{
+"city": "Timișoara",
+"country": "Romania",
+"continent": "Europe",
+"lat": 45.7489,
+"lon": 21.2087,
+"isCapital": false,
+"aliases": [
+"timisoara"
+]
+},
+{
+"city": "Iași",
+"country": "Romania",
+"continent": "Europe",
+"lat": 47.1585,
+"lon": 27.6014,
+"isCapital": false,
+"aliases": [
+"iasi"
+]
+},
+{
+"city": "Constanța",
+"country": "Romania",
+"continent": "Europe",
+"lat": 44.1598,
+"lon": 28.6348,
+"isCapital": false,
+"aliases": [
+"constanta"
+]
+},
+{
+"city": "Plovdiv",
+"country": "Bulgaria",
+"continent": "Europe",
+"lat": 42.1354,
+"lon": 24.7453,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Varna",
+"country": "Bulgaria",
+"continent": "Europe",
+"lat": 43.2141,
+"lon": 27.9147,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lviv",
+"country": "Ukraine",
+"continent": "Europe",
+"lat": 49.8397,
+"lon": 24.0297,
+"isCapital": false,
+"aliases": [
+"lvov",
+"lwow"
+]
+},
+{
+"city": "Odesa",
+"country": "Ukraine",
+"continent": "Europe",
+"lat": 46.4825,
+"lon": 30.7233,
+"isCapital": false,
+"aliases": [
+"odessa"
+]
+},
+{
+"city": "Kharkiv",
+"country": "Ukraine",
+"continent": "Europe",
+"lat": 49.9935,
+"lon": 36.2304,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dnipro",
+"country": "Ukraine",
+"continent": "Europe",
+"lat": 48.4647,
+"lon": 35.0462,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Saint Petersburg",
+"country": "Russia",
+"continent": "Europe",
+"lat": 59.9311,
+"lon": 30.3609,
+"isCapital": false,
+"aliases": [
+"leningrad",
+"petersburg",
+"st petersburg",
+"st. petersburg"
+]
+},
+{
+"city": "Novosibirsk",
+"country": "Russia",
+"continent": "Europe",
+"lat": 55.0084,
+"lon": 82.9357,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Yekaterinburg",
+"country": "Russia",
+"continent": "Europe",
+"lat": 56.8389,
+"lon": 60.6057,
+"isCapital": false,
+"aliases": [
+"ekaterinburg",
+"sverdlovsk"
+]
+},
+{
+"city": "Kazan",
+"country": "Russia",
+"continent": "Europe",
+"lat": 55.8304,
+"lon": 49.0661,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nizhny Novgorod",
+"country": "Russia",
+"continent": "Europe",
+"lat": 56.2965,
+"lon": 43.9361,
+"isCapital": false,
+"aliases": [
+"gorky",
+"nizhniy novgorod"
+]
+},
+{
+"city": "Samara",
+"country": "Russia",
+"continent": "Europe",
+"lat": 53.2415,
+"lon": 50.2212,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Rostov-on-Don",
+"country": "Russia",
+"continent": "Europe",
+"lat": 47.2357,
+"lon": 39.7015,
+"isCapital": false,
+"aliases": [
+"rostov on don"
+]
+},
+{
+"city": "Vladivostok",
+"country": "Russia",
+"continent": "Asia",
+"lat": 43.1198,
+"lon": 131.8869,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sochi",
+"country": "Russia",
+"continent": "Europe",
+"lat": 43.6028,
+"lon": 39.7342,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Volgograd",
+"country": "Russia",
+"continent": "Europe",
+"lat": 48.708,
+"lon": 44.5133,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Krasnoyarsk",
+"country": "Russia",
+"continent": "Asia",
+"lat": 56.0184,
+"lon": 92.8672,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Irkutsk",
+"country": "Russia",
+"continent": "Asia",
+"lat": 52.287,
+"lon": 104.305,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Thessaloniki",
+"country": "Greece",
+"continent": "Europe",
+"lat": 40.6401,
+"lon": 22.9444,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Patras",
+"country": "Greece",
+"continent": "Europe",
+"lat": 38.2466,
+"lon": 21.7346,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Heraklion",
+"country": "Greece",
+"continent": "Europe",
+"lat": 35.3387,
+"lon": 25.1442,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Limassol",
+"country": "Cyprus",
+"continent": "Europe",
+"lat": 34.7071,
+"lon": 33.0226,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Istanbul",
+"country": "Turkey",
+"continent": "Europe",
+"lat": 41.0082,
+"lon": 28.9784,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Izmir",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 38.4192,
+"lon": 27.1287,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bursa",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 40.1828,
+"lon": 29.0665,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Antalya",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 36.8969,
+"lon": 30.7133,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Adana",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 37.0,
+"lon": 35.3213,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Gaziantep",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 37.0662,
+"lon": 37.3833,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Konya",
+"country": "Turkey",
+"continent": "Asia",
+"lat": 37.8714,
+"lon": 32.4843,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Shanghai",
+"country": "China",
+"continent": "Asia",
+"lat": 31.2304,
+"lon": 121.4737,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Guangzhou",
+"country": "China",
+"continent": "Asia",
+"lat": 23.1291,
+"lon": 113.2644,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Shenzhen",
+"country": "China",
+"continent": "Asia",
+"lat": 22.5431,
+"lon": 114.0579,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chongqing",
+"country": "China",
+"continent": "Asia",
+"lat": 29.563,
+"lon": 106.5516,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tianjin",
+"country": "China",
+"continent": "Asia",
+"lat": 39.3434,
+"lon": 117.3616,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Wuhan",
+"country": "China",
+"continent": "Asia",
+"lat": 30.5928,
+"lon": 114.3055,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chengdu",
+"country": "China",
+"continent": "Asia",
+"lat": 30.5728,
+"lon": 104.0668,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nanjing",
+"country": "China",
+"continent": "Asia",
+"lat": 32.0603,
+"lon": 118.7969,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Xi'an",
+"country": "China",
+"continent": "Asia",
+"lat": 34.3416,
+"lon": 108.9398,
+"isCapital": false,
+"aliases": [
+"xian"
+]
+},
+{
+"city": "Hangzhou",
+"country": "China",
+"continent": "Asia",
+"lat": 30.2741,
+"lon": 120.1551,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Shenyang",
+"country": "China",
+"continent": "Asia",
+"lat": 41.8057,
+"lon": 123.4315,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Harbin",
+"country": "China",
+"continent": "Asia",
+"lat": 45.8038,
+"lon": 126.535,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Qingdao",
+"country": "China",
+"continent": "Asia",
+"lat": 36.0671,
+"lon": 120.3826,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dalian",
+"country": "China",
+"continent": "Asia",
+"lat": 38.914,
+"lon": 121.6147,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Jinan",
+"country": "China",
+"continent": "Asia",
+"lat": 36.6512,
+"lon": 117.1201,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Zhengzhou",
+"country": "China",
+"continent": "Asia",
+"lat": 34.7466,
+"lon": 113.6253,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Changsha",
+"country": "China",
+"continent": "Asia",
+"lat": 28.2282,
+"lon": 112.9388,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kunming",
+"country": "China",
+"continent": "Asia",
+"lat": 25.0389,
+"lon": 102.7183,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Xiamen",
+"country": "China",
+"continent": "Asia",
+"lat": 24.4798,
+"lon": 118.0894,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Suzhou",
+"country": "China",
+"continent": "Asia",
+"lat": 31.2989,
+"lon": 120.5853,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lhasa",
+"country": "China",
+"continent": "Asia",
+"lat": 29.65,
+"lon": 91.1,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hong Kong",
+"country": "China",
+"continent": "Asia",
+"lat": 22.3193,
+"lon": 114.1694,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Macau",
+"country": "China",
+"continent": "Asia",
+"lat": 22.1987,
+"lon": 113.5439,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Yokohama",
+"country": "Japan",
+"continent": "Asia",
+"lat": 35.4437,
+"lon": 139.638,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Osaka",
+"country": "Japan",
+"continent": "Asia",
+"lat": 34.6937,
+"lon": 135.5023,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nagoya",
+"country": "Japan",
+"continent": "Asia",
+"lat": 35.1815,
+"lon": 136.9066,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sapporo",
+"country": "Japan",
+"continent": "Asia",
+"lat": 43.0642,
+"lon": 141.3469,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kobe",
+"country": "Japan",
+"continent": "Asia",
+"lat": 34.6901,
+"lon": 135.1956,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kyoto",
+"country": "Japan",
+"continent": "Asia",
+"lat": 35.0116,
+"lon": 135.7681,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Fukuoka",
+"country": "Japan",
+"continent": "Asia",
+"lat": 33.5904,
+"lon": 130.4017,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hiroshima",
+"country": "Japan",
+"continent": "Asia",
+"lat": 34.3853,
+"lon": 132.4553,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sendai",
+"country": "Japan",
+"continent": "Asia",
+"lat": 38.2682,
+"lon": 140.8694,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nagasaki",
+"country": "Japan",
+"continent": "Asia",
+"lat": 32.7503,
+"lon": 129.8779,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Okinawa",
+"country": "Japan",
+"continent": "Asia",
+"lat": 26.3344,
+"lon": 127.8056,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Busan",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 35.1796,
+"lon": 129.0756,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Incheon",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 37.4563,
+"lon": 126.7052,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Daegu",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 35.8714,
+"lon": 128.6014,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Daejeon",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 36.3504,
+"lon": 127.3845,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Gwangju",
+"country": "South Korea",
+"continent": "Asia",
+"lat": 35.1595,
+"lon": 126.8526,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mumbai",
+"country": "India",
+"continent": "Asia",
+"lat": 19.076,
+"lon": 72.8777,
+"isCapital": false,
+"aliases": [
+"bombay"
+]
+},
+{
+"city": "Bangalore",
+"country": "India",
+"continent": "Asia",
+"lat": 12.9716,
+"lon": 77.5946,
+"isCapital": false,
+"aliases": [
+"bengaluru"
+]
+},
+{
+"city": "Chennai",
+"country": "India",
+"continent": "Asia",
+"lat": 13.0827,
+"lon": 80.2707,
+"isCapital": false,
+"aliases": [
+"madras"
+]
+},
+{
+"city": "Hyderabad",
+"country": "India",
+"continent": "Asia",
+"lat": 17.385,
+"lon": 78.4867,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kolkata",
+"country": "India",
+"continent": "Asia",
+"lat": 22.5726,
+"lon": 88.3639,
+"isCapital": false,
+"aliases": [
+"calcutta"
+]
+},
+{
+"city": "Ahmedabad",
+"country": "India",
+"continent": "Asia",
+"lat": 23.0225,
+"lon": 72.5714,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Pune",
+"country": "India",
+"continent": "Asia",
+"lat": 18.5204,
+"lon": 73.8567,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Surat",
+"country": "India",
+"continent": "Asia",
+"lat": 21.1702,
+"lon": 72.8311,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Jaipur",
+"country": "India",
+"continent": "Asia",
+"lat": 26.9124,
+"lon": 75.7873,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lucknow",
+"country": "India",
+"continent": "Asia",
+"lat": 26.8467,
+"lon": 80.9462,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kanpur",
+"country": "India",
+"continent": "Asia",
+"lat": 26.4499,
+"lon": 80.3319,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Nagpur",
+"country": "India",
+"continent": "Asia",
+"lat": 21.1458,
+"lon": 79.0882,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Indore",
+"country": "India",
+"continent": "Asia",
+"lat": 22.7196,
+"lon": 75.8577,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bhopal",
+"country": "India",
+"continent": "Asia",
+"lat": 23.2599,
+"lon": 77.4126,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Patna",
+"country": "India",
+"continent": "Asia",
+"lat": 25.5941,
+"lon": 85.1376,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Vadodara",
+"country": "India",
+"continent": "Asia",
+"lat": 22.3072,
+"lon": 73.1812,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Ludhiana",
+"country": "India",
+"continent": "Asia",
+"lat": 30.901,
+"lon": 75.8573,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Agra",
+"country": "India",
+"continent": "Asia",
+"lat": 27.1767,
+"lon": 78.0081,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Varanasi",
+"country": "India",
+"continent": "Asia",
+"lat": 25.3176,
+"lon": 82.9739,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Amritsar",
+"country": "India",
+"continent": "Asia",
+"lat": 31.634,
+"lon": 74.8723,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Goa",
+"country": "India",
+"continent": "Asia",
+"lat": 15.2993,
+"lon": 74.124,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kochi",
+"country": "India",
+"continent": "Asia",
+"lat": 9.9312,
+"lon": 76.2673,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Coimbatore",
+"country": "India",
+"continent": "Asia",
+"lat": 11.0168,
+"lon": 76.9558,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Visakhapatnam",
+"country": "India",
+"continent": "Asia",
+"lat": 17.6868,
+"lon": 83.2185,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chandigarh",
+"country": "India",
+"continent": "Asia",
+"lat": 30.7333,
+"lon": 76.7794,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Madurai",
+"country": "India",
+"continent": "Asia",
+"lat": 9.9252,
+"lon": 78.1198,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mysore",
+"country": "India",
+"continent": "Asia",
+"lat": 12.2958,
+"lon": 76.6394,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Srinagar",
+"country": "India",
+"continent": "Asia",
+"lat": 34.0837,
+"lon": 74.7973,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Shimla",
+"country": "India",
+"continent": "Asia",
+"lat": 31.1048,
+"lon": 77.1734,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Darjeeling",
+"country": "India",
+"continent": "Asia",
+"lat": 27.041,
+"lon": 88.2663,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Rishikesh",
+"country": "India",
+"continent": "Asia",
+"lat": 30.0869,
+"lon": 78.2676,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Karachi",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 24.8607,
+"lon": 67.0011,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lahore",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 31.5204,
+"lon": 74.3587,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Faisalabad",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 31.4504,
+"lon": 73.135,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Rawalpindi",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 33.5651,
+"lon": 73.0169,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Multan",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 30.1575,
+"lon": 71.5249,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Peshawar",
+"country": "Pakistan",
+"continent": "Asia",
+"lat": 34.0151,
+"lon": 71.5249,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chittagong",
+"country": "Bangladesh",
+"continent": "Asia",
+"lat": 22.3569,
+"lon": 91.7832,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Khulna",
+"country": "Bangladesh",
+"continent": "Asia",
+"lat": 22.8456,
+"lon": 89.5403,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kandy",
+"country": "Sri Lanka",
+"continent": "Asia",
+"lat": 7.2906,
+"lon": 80.6337,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Galle",
+"country": "Sri Lanka",
+"continent": "Asia",
+"lat": 6.0535,
+"lon": 80.221,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Ho Chi Minh City",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 10.8231,
+"lon": 106.6297,
+"isCapital": false,
+"aliases": [
+"ho chi minh",
+"saigon"
+]
+},
+{
+"city": "Da Nang",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 16.0544,
+"lon": 108.2022,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Haiphong",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 20.8449,
+"lon": 106.6881,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hue",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 16.4637,
+"lon": 107.5909,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hoi An",
+"country": "Vietnam",
+"continent": "Asia",
+"lat": 15.8801,
+"lon": 108.338,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Chiang Mai",
+"country": "Thailand",
+"continent": "Asia",
+"lat": 18.7883,
+"lon": 98.9853,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Phuket",
+"country": "Thailand",
+"continent": "Asia",
+"lat": 7.8804,
+"lon": 98.3923,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Pattaya",
+"country": "Thailand",
+"continent": "Asia",
+"lat": 12.9236,
+"lon": 100.8825,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cebu",
+"country": "Philippines",
+"continent": "Asia",
+"lat": 10.3157,
+"lon": 123.8854,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Davao",
+"country": "Philippines",
+"continent": "Asia",
+"lat": 7.1907,
+"lon": 125.4553,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Quezon City",
+"country": "Philippines",
+"continent": "Asia",
+"lat": 14.676,
+"lon": 121.0437,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Surabaya",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -7.2575,
+"lon": 112.7521,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bandung",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -6.9175,
+"lon": 107.6191,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Medan",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": 3.5952,
+"lon": 98.6722,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Semarang",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -6.9667,
+"lon": 110.4167,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Makassar",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -5.1477,
+"lon": 119.4327,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Denpasar",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -8.6705,
+"lon": 115.2126,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Yogyakarta",
+"country": "Indonesia",
+"continent": "Asia",
+"lat": -7.7956,
+"lon": 110.3695,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Penang",
+"country": "Malaysia",
+"continent": "Asia",
+"lat": 5.4164,
+"lon": 100.3327,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Johor Bahru",
+"country": "Malaysia",
+"continent": "Asia",
+"lat": 1.4927,
+"lon": 103.7414,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kota Kinabalu",
+"country": "Malaysia",
+"continent": "Asia",
+"lat": 5.9804,
+"lon": 116.0735,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mandalay",
+"country": "Myanmar",
+"continent": "Asia",
+"lat": 21.9588,
+"lon": 96.0891,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Yangon",
+"country": "Myanmar",
+"continent": "Asia",
+"lat": 16.8409,
+"lon": 96.1735,
+"isCapital": false,
+"aliases": [
+"rangoon"
+]
+},
+{
+"city": "Siem Reap",
+"country": "Cambodia",
+"continent": "Asia",
+"lat": 13.3633,
+"lon": 103.8564,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dubai",
+"country": "United Arab Emirates",
+"continent": "Asia",
+"lat": 25.2048,
+"lon": 55.2708,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sharjah",
+"country": "United Arab Emirates",
+"continent": "Asia",
+"lat": 25.3463,
+"lon": 55.4209,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mecca",
+"country": "Saudi Arabia",
+"continent": "Asia",
+"lat": 21.3891,
+"lon": 39.8579,
+"isCapital": false,
+"aliases": [
+"makkah"
+]
+},
+{
+"city": "Medina",
+"country": "Saudi Arabia",
+"continent": "Asia",
+"lat": 24.5247,
+"lon": 39.5692,
+"isCapital": false,
+"aliases": [
+"madinah"
+]
+},
+{
+"city": "Jeddah",
+"country": "Saudi Arabia",
+"continent": "Asia",
+"lat": 21.4858,
+"lon": 39.1925,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dammam",
+"country": "Saudi Arabia",
+"continent": "Asia",
+"lat": 26.4207,
+"lon": 50.0888,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tel Aviv",
+"country": "Israel",
+"continent": "Asia",
+"lat": 32.0853,
+"lon": 34.7818,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Haifa",
+"country": "Israel",
+"continent": "Asia",
+"lat": 32.794,
+"lon": 34.9896,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Aleppo",
+"country": "Syria",
+"continent": "Asia",
+"lat": 36.2021,
+"lon": 37.1343,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mosul",
+"country": "Iraq",
+"continent": "Asia",
+"lat": 36.345,
+"lon": 43.145,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Basra",
+"country": "Iraq",
+"continent": "Asia",
+"lat": 30.5085,
+"lon": 47.7804,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Erbil",
+"country": "Iraq",
+"continent": "Asia",
+"lat": 36.1911,
+"lon": 44.0093,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Isfahan",
+"country": "Iran",
+"continent": "Asia",
+"lat": 32.6539,
+"lon": 51.666,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mashhad",
+"country": "Iran",
+"continent": "Asia",
+"lat": 36.2605,
+"lon": 59.6168,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Shiraz",
+"country": "Iran",
+"continent": "Asia",
+"lat": 29.5918,
+"lon": 52.5837,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tabriz",
+"country": "Iran",
+"continent": "Asia",
+"lat": 38.0962,
+"lon": 46.2738,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Alexandria",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 31.2001,
+"lon": 29.9187,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Giza",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 30.0131,
+"lon": 31.2089,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Luxor",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 25.6872,
+"lon": 32.6396,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Aswan",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 24.0889,
+"lon": 32.8998,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sharm El Sheikh",
+"country": "Egypt",
+"continent": "Africa",
+"lat": 27.9158,
+"lon": 34.33,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Casablanca",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 33.5731,
+"lon": -7.5898,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Marrakesh",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 31.6295,
+"lon": -7.9811,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Fes",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 34.0181,
+"lon": -5.0078,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Tangier",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 35.7595,
+"lon": -5.834,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Agadir",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 30.4278,
+"lon": -9.5981,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Oran",
+"country": "Algeria",
+"continent": "Africa",
+"lat": 35.6976,
+"lon": -0.6337,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Constantine",
+"country": "Algeria",
+"continent": "Africa",
+"lat": 36.365,
+"lon": 6.6147,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sfax",
+"country": "Tunisia",
+"continent": "Africa",
+"lat": 34.7406,
+"lon": 10.7603,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Benghazi",
+"country": "Libya",
+"continent": "Africa",
+"lat": 32.1167,
+"lon": 20.0667,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Lagos",
+"country": "Nigeria",
+"continent": "Africa",
+"lat": 6.5244,
+"lon": 3.3792,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Kano",
+"country": "Nigeria",
+"continent": "Africa",
+"lat": 12.0022,
+"lon": 8.5919,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Ibadan",
+"country": "Nigeria",
+"continent": "Africa",
+"lat": 7.3775,
+"lon": 3.947,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Port Harcourt",
+"country": "Nigeria",
+"continent": "Africa",
+"lat": 4.8156,
+"lon": 7.0498,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Mombasa",
+"country": "Kenya",
+"continent": "Africa",
+"lat": -4.0435,
+"lon": 39.6682,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cape Town",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -33.9249,
+"lon": 18.4241,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Johannesburg",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -26.2041,
+"lon": 28.0473,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Durban",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -29.8587,
+"lon": 31.0218,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Port Elizabeth",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -33.9608,
+"lon": 25.6022,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Bloemfontein",
+"country": "South Africa",
+"continent": "Africa",
+"lat": -29.0852,
+"lon": 26.1596,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Marrakech",
+"country": "Morocco",
+"continent": "Africa",
+"lat": 31.6295,
+"lon": -7.9811,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Zanzibar City",
+"country": "Tanzania",
+"continent": "Africa",
+"lat": -6.1659,
+"lon": 39.2026,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Dar es Salaam",
+"country": "Tanzania",
+"continent": "Africa",
+"lat": -6.7924,
+"lon": 39.2083,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Sydney",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -33.8688,
+"lon": 151.2093,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Melbourne",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -37.8136,
+"lon": 144.9631,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Brisbane",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -27.4698,
+"lon": 153.0251,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Perth",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -31.9505,
+"lon": 115.8605,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Adelaide",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -34.9285,
+"lon": 138.6007,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Gold Coast",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -28.0167,
+"lon": 153.4,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Newcastle",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -32.9283,
+"lon": 151.7817,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Hobart",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -42.8821,
+"lon": 147.3272,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Darwin",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -12.4634,
+"lon": 130.8456,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Cairns",
+"country": "Australia",
+"continent": "Oceania",
+"lat": -16.9186,
+"lon": 145.7781,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Auckland",
+"country": "New Zealand",
+"continent": "Oceania",
+"lat": -36.8485,
+"lon": 174.7633,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Christchurch",
+"country": "New Zealand",
+"continent": "Oceania",
+"lat": -43.5321,
+"lon": 172.6362,
+"isCapital": false,
+"aliases": []
+},
+{
+"city": "Queenstown",
+"country": "New Zealand",
+"continent": "Oceania",
+"lat": -45.0312,
+"lon": 168.6626,
+"isCapital": false,
+"aliases": []
+}
+]
