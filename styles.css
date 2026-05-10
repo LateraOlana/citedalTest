@@ -226,9 +226,20 @@ body {
   border-radius: 18px;
   padding: 26px 26px 22px;
   display: flex; flex-direction: column; gap: 18px;
-  /* Isolate from neighboring cards so map repaints don't trigger ours. */
-  contain: layout paint;
-  isolation: isolate;
+  /* contain: layout (without paint) prevents map-zoom flicker without
+     clipping the absolute-positioned suggestion dropdown that hangs below. */
+  contain: layout;
+  /* Critical: position + high z-index lifts the entire game-card stacking
+     context above the guess-list-card below. Without this, the
+     guess-list-card's solid background paints over our dropdown overlay
+     because both cards have isolation: isolate which puts them in
+     SEPARATE stacking contexts where z-index between them is meaningless
+     unless their parents have explicit z-index too. */
+  position: relative;
+  z-index: 5;
+  /* Allow the absolutely-positioned suggestions dropdown to overflow the
+     card visually. */
+  overflow: visible;
 }
 
 /* The map column wraps the HUD bar + the actual map. Stacks vertically. */
@@ -266,9 +277,12 @@ body {
      scroll if there are many guesses. */
   max-height: clamp(360px, calc(82vh - 200px), 680px);
   overflow-y: auto;
-  /* Isolate so neighboring map repaints don't cause this column to flicker. */
-  contain: layout paint;
-  isolation: isolate;
+  /* Sit BELOW the game-card so the suggestion dropdown can overlap it. */
+  position: relative;
+  z-index: 1;
+  /* Layout containment is fine; PAINT containment would clip overlays from
+     the game-card above. We removed it. */
+  contain: layout;
 }
 @media (max-width: 900px) {
   .game-card  { grid-column: 1; grid-row: 1; padding: 22px; }
@@ -279,6 +293,7 @@ body {
 /* =================== GAME CARD =================== */
 .puzzle-meta {
   display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
   font-family: var(--mono); font-size: 11px;
   letter-spacing: .12em; text-transform: uppercase;
   color: rgba(255, 248, 231, .78);
@@ -292,6 +307,34 @@ body {
   border-radius: 999px;
   font-size: 10px; font-weight: 700;
   letter-spacing: .14em;
+}
+.puzzle-countdown {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 3px 9px 3px 8px;
+  background: rgba(255, 209, 102, .12);
+  border: 1px solid rgba(255, 209, 102, .28);
+  color: var(--gold);
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.puzzle-countdown::before {
+  content: "";
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 209, 102, .6);
+  animation: countdown-pulse 2s ease-in-out infinite;
+}
+@keyframes countdown-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .35; }
+}
+@media (max-width: 600px) {
+  .puzzle-countdown { font-size: 9.5px; padding: 2px 8px; }
 }
 
 .guess-row {
@@ -324,27 +367,38 @@ body {
 .guess-suggestions {
   position: absolute;
   top: calc(100% + 6px); left: 0; right: 0;
-  max-height: min(380px, 50vh);
+  /* Cap at 60vh so it never runs past the viewport, but stay generous on
+     desktop. Always scrollable when results exceed this height. */
+  max-height: min(60vh, 480px);
   overflow-y: auto;
-  background: var(--card-bg-strong);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  /* Stop scroll chaining to the page below (so users can scroll inside the
+     dropdown on touch devices without bouncing the whole page). */
+  overscroll-behavior: contain;
+  /* Smooth iOS momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* Fully opaque deep-navy: must completely hide whatever it overlaps,
+     including the guess-list-card below. Don't rely on backdrop blur. */
+  background: #1a2454;
   border: 1px solid var(--card-border);
   border-radius: 12px;
-  z-index: 20;
+  z-index: 30;
   box-shadow: 0 14px 40px -10px rgba(0, 0, 0, .5);
-  /* Subtle scrollbar styling for the suggestion list */
+  /* Visible gold scrollbar so users see the scroll affordance */
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 209, 102, .35) transparent;
+  scrollbar-color: rgba(255, 209, 102, .55) transparent;
 }
-.guess-suggestions::-webkit-scrollbar { width: 8px; }
-.guess-suggestions::-webkit-scrollbar-track { background: transparent; }
+.guess-suggestions::-webkit-scrollbar { width: 10px; }
+.guess-suggestions::-webkit-scrollbar-track { background: transparent; margin: 4px; }
 .guess-suggestions::-webkit-scrollbar-thumb {
-  background: rgba(255, 209, 102, .3);
-  border-radius: 4px;
+  background: rgba(255, 209, 102, .5);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 .guess-suggestions::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 209, 102, .5);
+  background: rgba(255, 209, 102, .75);
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
 .guess-suggestions[hidden] { display: none; }
 .suggestion {
@@ -886,10 +940,37 @@ body {
   position: absolute; inset: 0;
   border-radius: 50%;
   background: var(--pin-color, var(--w-warm));
+  opacity: 0;
+  /* No animation by default — pins are static unless they're the closest
+     or the most-recently-dropped. With many guesses, infinite animations
+     on every pin destroy phone GPU budget. */
+}
+/* The closest pin gets a continuous pulse (the "warmth" indicator). */
+.pin.is-closest .pin-pulse {
   opacity: .4;
   animation: pin-pulse 2s ease-out infinite;
 }
-.pin.correct .pin-pulse { animation-duration: 1s; }
+/* The most-recently-dropped pin pulses briefly (one-shot, not infinite) so
+   the user sees it land, then it goes quiet. */
+.pin.is-latest:not(.is-closest) .pin-pulse {
+  opacity: .4;
+  animation: pin-pulse 2s ease-out 2;  /* runs twice, then stops */
+}
+.pin.correct .pin-pulse {
+  opacity: .4;
+  animation: pin-pulse 1s ease-out infinite;
+}
+
+/* Honor prefers-reduced-motion: kill all decorative animation. */
+@media (prefers-reduced-motion: reduce) {
+  .pin-pulse,
+  .pin.is-closest .pin-pulse,
+  .pin.is-latest .pin-pulse,
+  .pin.correct .pin-pulse,
+  .pin-crown {
+    animation: none !important;
+  }
+}
 
 /* Star badge above the closest non-correct pin (the "warmest" guess so far) */
 .pin.is-closest .pin-dot {

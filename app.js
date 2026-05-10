@@ -163,6 +163,59 @@
     return d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
   }
 
+  // ---------- Countdown to next puzzle (00:00 UTC) ----------
+  /** Milliseconds until the next UTC midnight. Same instant for everyone
+   *  worldwide; what changes is how the user sees it on their clock. */
+  function msToNextResetUTC() {
+    const now = new Date();
+    const next = Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate() + 1, 0, 0, 0, 0
+    );
+    return next - now.getTime();
+  }
+  /** Format remaining time. Hours preferred; minutes when under 1 hour. */
+  function fmtRemaining(ms) {
+    const totalSec = Math.max(0, Math.floor(ms / 1000));
+    const hours = Math.floor(totalSec / 3600);
+    const mins = Math.floor((totalSec % 3600) / 60);
+    if (hours >= 1) {
+      // round UP — "1 hour remaining" reads better than "0 hours" with 30 mins left
+      const displayHours = mins > 0 ? hours + 1 : hours;
+      // but don't double-round on exact-hour boundaries; show floor + " h " mins-style? keep simple:
+      return `${hours} hr${hours === 1 ? "" : "s"} remaining until the next`;
+    }
+    if (mins >= 1) {
+      return `${mins} min${mins === 1 ? "" : "s"} remaining until the next`;
+    }
+    return `Any second now…`;
+  }
+
+  let countdownTimer = null;
+  function startCountdown() {
+    const el = $("#puzzle-countdown");
+    if (!el) return;
+    function tick() {
+      const ms = msToNextResetUTC();
+      el.textContent = fmtRemaining(ms);
+      el.hidden = false;
+      // If past midnight (rare race), refresh the puzzle number/date.
+      if (ms <= 0) {
+        // Soft reload to roll over to the new daily puzzle.
+        location.reload();
+        return;
+      }
+      // When under a minute, tick every second so the user sees the final
+      // countdown; otherwise once a minute is fine (and saves battery).
+      const totalSec = Math.floor(ms / 1000);
+      const nextDelay = totalSec < 60 ? 1000 : 60 * 1000;
+      countdownTimer = setTimeout(tick, nextDelay);
+    }
+    if (countdownTimer) clearTimeout(countdownTimer);
+    tick();
+  }
+
   // ---------- Persistence ----------
   function saveProgress() {
     if (isFreePlay) return;
@@ -273,8 +326,12 @@
     });
   }
 
-  function buildPinIcon(name, tier, isCorrect = false, isClosest = false) {
-    const cls = [isCorrect ? "correct" : "", isClosest ? "is-closest" : ""].join(" ").trim();
+  function buildPinIcon(name, tier, isCorrect = false, isClosest = false, isLatest = false) {
+    const cls = [
+      isCorrect ? "correct" : "",
+      isClosest ? "is-closest" : "",
+      isLatest ? "is-latest" : ""
+    ].filter(Boolean).join(" ");
     const html = `
       <div class="pin ${cls}" style="--pin-color: ${tier.color}; --pin-glow: ${tier.glow};">
         <div class="pin-pulse"></div>
@@ -290,43 +347,80 @@
     });
   }
 
-  /** After every new guess, update the visual "closest" highlight on the map.
-   *  Re-builds the icon for the previous closest (un-marking it) and for the
-   *  new closest (marking it). This keeps the star badge on the warmest pin. */
+  /** Track the previous closest's index so we only need to update two pins
+   *  per guess (the previous closest and the new one), not all of them. */
+  let previousClosestIdx = -1;
+  let previousLatestIdx = -1;
+
+  /** After every new guess, update only the pins whose visual state changed.
+   *  Re-rendering all N pins per guess was an N² cost on phones with many
+   *  guesses; this drops it to a constant ~2-3 setIcon calls. */
   function refreshClosestPinHighlight() {
     if (guesses.length === 0) return;
     const closest = closestGuess();
     if (!closest) return;
-    const closestKey = `${closest.lat},${closest.lon}`;
-    pinMarkers.forEach((marker, i) => {
+
+    // Find the new closest's index
+    let newClosestIdx = -1;
+    for (let i = 0; i < guesses.length; i++) {
+      if (guesses[i].lat === closest.lat && guesses[i].lon === closest.lon) {
+        newClosestIdx = i;
+        break;
+      }
+    }
+    const newLatestIdx = guesses.length - 1;
+
+    // Re-render only the indices whose state changed: previous closest,
+    // previous latest, new closest, new latest.
+    const toUpdate = new Set([
+      previousClosestIdx, previousLatestIdx,
+      newClosestIdx, newLatestIdx
+    ].filter(i => i >= 0 && i < guesses.length));
+
+    toUpdate.forEach(i => {
       const g = guesses[i];
-      if (!g) return;
+      const marker = pinMarkers[i];
+      if (!g || !marker) return;
       const isCorrect = g.distanceKm < 0.5;
-      const isClosest = !isCorrect && `${g.lat},${g.lon}` === closestKey;
+      const isClosest = !isCorrect && i === newClosestIdx;
+      const isLatest = i === newLatestIdx;
       const tier = warmthFor(g.distanceKm);
-      marker.setIcon(buildPinIcon(g.name, tier, isCorrect, isClosest));
+      marker.setIcon(buildPinIcon(g.name, tier, isCorrect, isClosest, isLatest));
     });
+
+    previousClosestIdx = newClosestIdx;
+    previousLatestIdx = newLatestIdx;
   }
 
   function dropPin(g, isCorrect) {
     const tier = warmthFor(g.distanceKm);
+    // Build the icon already marked as latest+closest-candidate. The proper
+    // closest computation runs in refreshClosestPinHighlight() right after.
     const marker = L.marker([g.lat, g.lon], {
-      icon: buildPinIcon(g.name, tier, isCorrect, false /* will refresh below */),
+      icon: buildPinIcon(g.name, tier, isCorrect, false, true),
       keyboard: false,
     }).addTo(map);
     pinMarkers.push(marker);
 
-    // Update the "warmest pin" star badge on the map
+    // Update star badge and pulse states (only ~3 pins re-render, not all).
     refreshClosestPinHighlight();
 
-    // Connector line from latest guess toward the answer (only revealed on win)
+    // Connector line cleanup
     if (connectorPolyline) {
       map.removeLayer(connectorPolyline);
       connectorPolyline = null;
     }
 
+    // Performance: animate the camera only for the first few guesses; after
+    // that, jump instantly. Long flyTo animations stack frame work on phones
+    // and cause visible stutter when many pins + animations run together.
+    // Honor prefers-reduced-motion for accessibility.
+    const prefersReduced = typeof window !== "undefined" &&
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const useAnimation = !prefersReduced && guesses.length <= 5;
+
     if (isCorrect) {
-      // On win, reveal the answer with a citadel marker
       const trophyIcon = L.divIcon({
         className: "citadel-icon",
         html: `<div class="citadel-marker">🏰</div>`,
@@ -335,7 +429,6 @@
       });
       citadelMarker = L.marker([answer.lat, answer.lon], { icon: trophyIcon }).addTo(map);
 
-      // Draw soft connecting lines from each guess to the answer
       const lines = pinMarkers.slice(0, -1).map(m => {
         const ll = m.getLatLng();
         return L.polyline(
@@ -347,10 +440,20 @@
 
       const bounds = L.latLngBounds(pinMarkers.map(m => m.getLatLng()));
       bounds.extend([answer.lat, answer.lon]);
-      map.flyToBounds(bounds.pad(0.4), { duration: 1.2 });
+      // Win flight is short and only happens once — keep it animated.
+      if (useAnimation || isRestoring === false) {
+        map.flyToBounds(bounds.pad(0.4), { duration: prefersReduced ? 0 : 1.2 });
+      } else {
+        map.fitBounds(bounds.pad(0.4));
+      }
     } else {
-      // Pan to the new guess (zoomed enough to see the pin clearly)
-      map.flyTo([g.lat, g.lon], Math.max(map.getZoom(), 3), { duration: 0.9 });
+      const targetZoom = Math.max(map.getZoom(), 3);
+      if (useAnimation) {
+        map.flyTo([g.lat, g.lon], targetZoom, { duration: 0.9 });
+      } else {
+        // Instant — much cheaper on the GPU than a 900ms animation.
+        map.setView([g.lat, g.lon], targetZoom, { animate: false });
+      }
     }
   }
 
@@ -888,6 +991,9 @@
       if (l instanceof L.Polyline && !(l instanceof L.Rectangle)) map.removeLayer(l);
     });
     map.setView([20, 0], 2);
+    // Reset the closest/latest trackers so the next game starts clean.
+    previousClosestIdx = -1;
+    previousLatestIdx = -1;
   }
 
   // ---------- Game lifecycle ----------
@@ -906,6 +1012,7 @@
     $("#puzzle-num").textContent = `Puzzle #${puzzleNum}`;
     $("#puzzle-date").textContent = fmtDate(new Date());
     $("#puzzle-mode-badge").hidden = true;
+    startCountdown();
 
     // Restore progress if same puzzle was in progress
     const saved = loadProgress();
@@ -948,6 +1055,8 @@
     $("#puzzle-num").textContent = `Free play`;
     $("#puzzle-date").textContent = "Random city";
     $("#puzzle-mode-badge").hidden = false;
+    $("#puzzle-countdown").hidden = true;
+    if (countdownTimer) { clearTimeout(countdownTimer); countdownTimer = null; }
 
     renderGuessList();
     updateCounter();
